@@ -1,0 +1,39 @@
+include ../abstracts/variables
+
+doctype html
+html(lang=lang, dir=dir)
+    // HEAD
+    head
+        block head
+            meta(charset="UTF-8")
+            meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            meta(name="viewport" content="width=device-width, initial-scale=1")
+            
+            title=pageTitle
+            meta(name="description" content=pageDescription)
+
+            // link(rel="apple-touch-icon" sizes="180x180" href=dirImages + "favicon/apple-touch-icon.png")
+
+            // link(rel="shortcut icon" href=dirImages + "favicon/favicon.png")
+            
+            meta(name="theme-color" content="#D72027")
+
+            // dns-prefetch
+            link(rel="preconnect", href="https://connect.facebook.net")
+            link(rel="dns-prefetch", href="https://connect.facebook.net")
+
+            link(href=dirAssets + '/style.css' rel='stylesheet')
+
+    // BODY
+    body(class=pageClass)
+        block header
+            // HEADER
+            include ../includes/header
+            
+        // CONTENT
+        main.d-flex.flex-column
+            block content
+                h1(style="margin: 100px 0; text-align: center;") page content here
+        // CONTENT
+        block footer
+            include ../includes/footer

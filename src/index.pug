@@ -1,9 +1,11 @@
-doctype html
-html
-  head
-    title Tailwind CSS
-    link(href='./style.css' rel='stylesheet')
-    script(src='./app.js')
-    body.bg-sky-50.flex.justify-center
-      .mt-10.p-5.bg-white.shadow.rounded-lg
-        p.font-mono.text-xl.text-green-500 Hello Tailwind CSS!
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "Page Meta Title"
+    - var pageDescription = "Page Meta Desc"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-1920/1080')
+    img(src=dirAssets + '/kiler-anasayfa.jpg' alt='anasayfa')

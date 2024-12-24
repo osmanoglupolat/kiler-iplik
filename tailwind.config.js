@@ -2,6 +2,7 @@ module.exports = {
   content: [
     './src/**/*.pug',
   ],
+  safelist: ['flex', 'hidden', 'block'],
   theme: {
     container: {
       center: true,
@@ -11,11 +12,15 @@ module.exports = {
       }
     },
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
       colors: {
         primary: '#002444',
       },
       aspectRatio: {
-        '1920/1080': '1920/1080'
+        '1920/1080': '1920/1080',
+        '390/572': '390/572'
       }
     },
   },

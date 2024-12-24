@@ -13,4 +13,51 @@
         background-color: var(--background);
         color: var(--foreground);
     }
+
+    @keyframes toTop {
+        0% {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        10% {
+            transform: translateY(90px);
+            opacity: 0.1;
+        }
+        20% {
+            transform: translateY(80px);
+            opacity: 0.2;
+        }
+        30% {
+            transform: translateY(70px);
+            opacity: 0.3;
+        }
+        40% {
+            transform: translateY(60px);
+            opacity: 0.4;
+        }
+        50% {
+            transform: translateY(50px);
+            opacity: 0.5;
+        }
+        60% {
+            transform: translateY(40px);
+            opacity: 0.8;
+        }
+        70% {
+            transform: translateY(30px);
+            opacity: 0.7;
+        }
+        80% {
+            transform: translateY(20px);
+            opacity: 0.8;
+        }
+        90% {
+            transform: translateY(10px);
+            opacity: 0.9;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 }

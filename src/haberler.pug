@@ -9,10 +9,11 @@ block prepend head
 block content
   div(class='aspect-square lg:aspect-1920/560 relative -z-10')
     img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
-    h1(class='banner-title') 
-      | Kiler İplik Open-End ve Ring İplik
-      | Üretim Tesisi Görüntüleri ve
-      | Basın Yansımaları
+    div(class='banner-title') 
+      h1 
+        | Kiler İplik Open-End ve Ring İplik
+        | Üretim Tesisi Görüntüleri ve
+        | Basın Yansımaları
   
   div(class='container mt-6 lg:mt-12')
     div(class="lg:grid lg:grid-cols-3 flex flex-col gap-8")
@@ -38,8 +39,9 @@ block content
 
       // featured news col
       div(class="featured-news")
-        div(class='aspect-600/900 rounded-3xl overflow-hidden')
-          img(src=dirAssets + 'news-lg.jpg' alt='news-lg' class='w-full h-full object-cover')
+        a(href=dirAssets + 'news-lg.jpg' class='glightbox')
+          div(class='aspect-600/900 rounded-3xl overflow-hidden')
+            img(src=dirAssets + 'news-lg.jpg' alt='news-lg' class='w-full h-full object-cover')
         div(class='mt-4 text-lg')
           | Kiler Holding'den 200 Milyon Dolarlık İplik Fabrikası Yatırımı
 

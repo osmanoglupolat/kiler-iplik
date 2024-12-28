@@ -1,5 +1,18 @@
 const path = require("path");
+const fs = require("fs");
 const PugPlugin = require("pug-plugin");
+
+// src klasöründeki tüm .pug dosyalarını otomatik olarak bul ve entry nesnesini oluştur
+const pugFiles = fs
+  .readdirSync(path.join(__dirname, "src"))
+  .filter((file) => file.endsWith(".pug"));
+
+const entry = Object.fromEntries(
+  pugFiles.map((file) => [
+    path.basename(file, ".pug"), // Dosya adını anahtar olarak kullan
+    `./src/${file}`, // Dosyanın yolu
+  ])
+);
 
 module.exports = {
   mode: 'production',
@@ -10,12 +23,7 @@ module.exports = {
 
   plugins: [
     new PugPlugin({
-      entry: {
-        index: "./src/index.pug",
-        anasayfa: "./src/anasayfa.pug",
-        kurumsal: "./src/kurumsal.pug",
-        hizmetler: "./src/hizmetler.pug",
-      },
+      entry, // Dinamik olarak oluşturulan entry nesnesini kullan
       js: {
         filename: "js/[name].[contenthash:8].js",
       },

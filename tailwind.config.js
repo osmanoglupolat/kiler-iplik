@@ -4,13 +4,6 @@ module.exports = {
   ],
   safelist: ['flex', 'hidden', 'block'],
   theme: {
-    container: {
-      center: true,
-      padding: '5rem',
-      screens: {
-        '2xl': '1600px'
-      }
-    },
     extend: {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
@@ -25,7 +18,8 @@ module.exports = {
         '390/572': '390/572',
         'gallery': '1240/800',
         '600/900': '600/900',
-        '500/650': '500/650'
+        '500/650': '500/650',
+        '1200/720': '1200/720'
       }
     },
   },

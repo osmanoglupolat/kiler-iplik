@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const glightboxElements = [];
+  document.querySelectorAll(".glightbox").forEach((element) => {
+    // todo: kaldırılacak!
+    const imageSrc = element.querySelector("img").getAttribute("src");
+    element.href = imageSrc;
+    // todo: kaldırılacak!
+    glightboxElements.push(element);
+  });
+
+  if (glightboxElements.length > 0) {
+    const lightbox = GLightbox();
+  }
+
   const handleNavigation = {
     el: {
       openButton: "#open-navigation",
@@ -72,5 +85,4 @@ document.addEventListener("DOMContentLoaded", () => {
       mainSwiper.slideTo(activeIndex);
     });
   }
-
 });

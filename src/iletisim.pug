@@ -1,0 +1,56 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "Page Meta Title"
+    - var pageDescription = "Page Meta Desc"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'contact-banner.jpg' alt='iletişim' class='w-full h-full object-cover')
+    h1(class='banner-title') İLETİŞİM
+
+  section(class='container py-12')
+    div(class='lg:grid lg:grid-cols-3 flex flex-col gap-8')
+      div(class='flex lg:flex-col lg:justify-center items-center gap-3')
+        div
+          div(class='w-12 h-12 lg:w-[150px] lg:h-[150px] p-4 lg:p-14 bg-secondary rounded-full flex items-center justify-center')
+            img(src=dirAssets + 'location.svg' alt='iletişim' class='w-full')
+        div(class="lg:text-center")
+          div Adres
+          div(class='lg:text-center') 
+            | Kiler İplik Fabrikası Karşıyaka Mahallesi Bitlis Yolu Caddesi No: 16/0 Rahva Yolu Mevkii, Tatvan/BİTLİS
+      div(class='flex lg:flex-col lg:justify-center items-center gap-3')
+        div
+          div(class='w-12 h-12 lg:w-[150px] lg:h-[150px] p-4 lg:p-14 bg-secondary rounded-full flex items-center justify-center')
+            img(src=dirAssets + 'phone.svg' alt='iletişim' class='w-full')
+        div(class="lg:text-center")
+          div Telefon
+          div 
+            a(href='tel:+905333333333' class='hover:underline') +90 533 333 33 33
+      div(class='flex lg:flex-col lg:justify-center items-center gap-3')
+        div
+          div(class='w-12 h-12 lg:w-[150px] lg:h-[150px] p-4 lg:p-14 bg-secondary rounded-full flex items-center justify-center')
+            img(src=dirAssets + 'mail.svg' alt='iletişim' class='w-full')
+        div(class="lg:text-center")
+          div Email
+          div 
+            a(href='mailto:info@kiler.com.tr' class='hover:underline') info@kiler.com.tr
+
+  section(class='bg-secondary')
+    div(class='container py-12 lg:py-20')
+      h3(class='text-2xl') BİZİMLE İLETİŞİME GEÇ
+      form(class='lg:grid lg:grid-cols-2 flex flex-col gap-4 mt-6')
+        div(class='')
+          input(type='text' placeholder='İsim, Soyisim' class='form-element')
+        div(class='')
+          input(type='text' placeholder='Email' class='form-element')
+        div(class='')
+          input(type='text' placeholder='Telefon Numarası' class='form-element')
+        div(class='')
+          input(type='text' placeholder='Konu' class='form-element')
+        div(class='lg:col-span-2')
+          textarea(placeholder='Mesajınız' class='form-element' rows='8')
+        div(class='')
+          button(class='bg-primary inline-block text-center px-10 py-2') Gönder

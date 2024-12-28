@@ -85,6 +85,14 @@
   .section-bg-reverse .section-content {
     @apply lg:flex lg:justify-end lg:text-right;
   }
+
+  .container {
+    @apply mx-auto px-12 pr-4 lg:px-0 lg:max-w-[1600px];
+  }
+
+  .form-element {
+    @apply appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none bg-transparent placeholder:text-white;
+  }
 }
 
 .swiper-pagination-bullet {

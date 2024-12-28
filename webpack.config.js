@@ -12,6 +12,9 @@ module.exports = {
     new PugPlugin({
       entry: {
         index: "./src/index.pug",
+        anasayfa: "./src/anasayfa.pug",
+        kurumsal: "./src/kurumsal.pug",
+        hizmetler: "./src/hizmetler.pug",
       },
       js: {
         filename: "js/[name].[contenthash:8].js",

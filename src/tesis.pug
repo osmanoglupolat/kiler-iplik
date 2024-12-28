@@ -1,0 +1,59 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "Page Meta Title"
+    - var pageDescription = "Page Meta Desc"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    h1(class='absolute bottom-0 mb-8 w-full flex justify-center text-2xl lg:inline-block lg:pl-24 lg:text-3xl font-bold') ÜRETİM TESİSİMİZ
+  div(class='flex flex-col gap-10 lg:gap-24')
+    section(class='section-bg')
+      div(class='container')
+        div(class='section-row')
+          div(class='lg:w-1/2')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+                img(src=dirAssets + 'vizyon-1.jpg' alt='vizyon-1' class='w-full h-full object-cover')
+          div(class='flex flex-col lg:w-1/2')
+            div(class='section-title')
+              h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:max-w-[300px]')
+                | TÜRKİYE’DE TEK ÇATI ALTINDAKİ
+                | EN BÜYÜK İPLİK ÜRETİM TESİSİ
+            div(class='section-content')
+              p(class='text-lg lg:text-xl')
+                | Bitlis’te faaliyete geçirilen Open-End ve Ring-İplik Üretim Tesisi Kiler İplik Fabrikası 1. Etabı, modern üretim altyapısı ve geniş ölçekli bir alanla hizmet vermeye başlamıştır.
+              p(class='text-lg lg:text-xl')
+                | 60.631 metrekaresi kapalı alana sahip tesisimizin 200 milyon dolarlık yatırım hacmi bulunmaktadır.
+    
+    section(class='section-bg-reverse')
+      div(class='container')
+        div(class='section-row')
+          div(class='lg:w-1/2')
+              div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+                  img(src=dirAssets + 'vizyon-2.jpg' alt='vizyon-2' class='w-full h-full object-cover')
+          div(class='flex flex-col lg:w-1/2')
+            div(class='section-title')  
+              h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:max-w-[300px]')
+                | SÜRDÜRÜLEBİLİR
+                | ENERJİ ANLAYIŞI
+            div(class='section-content')
+              p(class='text-lg lg:text-xl')
+                | Üretim süreçlerindeki önceliğimiz, sürdürülebilir enerji kaynaklarının kullanılmasını sağlamaktır. Enerji verimliliği ve çevre dostu teknolojiler ile yaptığımız yatırımlar tümüyle doğal kaynakların korunması ve yenilenebilir enerjinin desteklenmesi yönündedir. 
+
+    section(class='section-bg')
+      div(class='container')
+        div(class='section-row')
+          div(class='lg:w-1/2')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+                img(src=dirAssets + 'misyon.jpg' alt='misyon' class='w-full h-full object-cover')
+          div(class='flex flex-col lg:w-1/2')
+            div(class='section-title')
+              h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:max-w-[300px]')
+                | PAMUKTAN İPLİĞE
+                | ÜRETİM HACMİ
+            div(class='section-content')
+              p(class='text-lg lg:text-xl')
+                | Tesisimiz, günlük 65 ton pamuk işleyerek 50 ton iplik üretme kapasitesine sahiptir. Yüksek teknolojiye sahip üretim hattımız ve verimli süreç yönetimimiz sayesinde, hammaddeyi en kaliteli ipliğe dönüştürerek sektöre yüksek standartlarda ürünler sunuyoruz. Bu üretim kapasitesiyle, müşteri taleplerine hızlı ve etkin bir şekilde yanıt veriyor, sürdürülebilir ve istikrarlı bir üretim modeli oluşturuyoruz.

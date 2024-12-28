@@ -1,0 +1,105 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "Page Meta Title"
+    - var pageDescription = "Page Meta Desc"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    h1(class='absolute bottom-0 mb-8 w-full flex justify-center text-2xl lg:inline-block lg:pl-24 lg:text-3xl font-bold') KURUMSAL
+
+  section(class='container py-12')
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | Kiler Holding’in temelleri 1983 yılında Hikmet Kiler ile oğulları Nahit, Vahit ve Ümit Kiler tarafından atıldı. Aile, asıl işi olan 
+        | gıda perakendeciliği ile sektöre giriş yaptı. İnşaat, taşımacılık, enerji, sanayi gibi alanlarda büyümesini ve yatırımlarını 
+        | devam ettiren Kiler Holding, günümüzde, 30’a yakın şirketiyle 6 farklı sektörde, 10 binin üzerinde çalışanıyla faaliyetlerini 
+        | sürdürüyor.
+
+      p(class='mb-2 lg:mb-4')
+        | Kiler Holding’in yakın vadede hedefi; inşaat, enerji, taşımacılık ve sanayi alanlarında yatırım yaparak istikrarlı bir şekilde 
+        | büyümeye devam etmek ve Türkiye’nin en güçlü 10 kuruluşu içerisinde yer almaktır.
+
+      p(class='mb-2 lg:mb-4')
+       | Holding’in inşaat sektöründeki farklı ölçeklerdeki pek çok konut ve işyeri, alışveriş merkezi yatırımları Kiler GYO çatısı 
+       | altında devam etmektedir. Konut projelerinde “REFERANS” markasıyla öne çıkan Kiler GYO, metropollerdeki yeni yaşam 
+       | eğilimlerine doğru lokasyonlarda, insan odaklı tasarım ve kaliteli inşaat projeleri geliştirerek yanıt veriyor. İstanbul 
+       | Sapphire Residence, Referans Bakırköy, Referans Bahçeşehir, Referans Beşiktaş, Referans Beylikdüzü, Kütahya Sera 
+       | AVM, ,Referans Göktürk Zonguldak Westalife AVM, Referans Pendik ve son olarak dönüşüm projesi olan Sapphire Office 
+       | inşaatlarını tasarlayıp geliştirdiği inşaası tamamlanan, teslim aşamasında olan ve devam edecen projelerinden bir 
+       | kısmıdır.  Kiler GYO’nun geliştirdiği projelerin yüklenicisi olan grup şirketimiz Biskon Yapı ise aynı zamanda alt yapı ve üst 
+       | yapı taahhüt projelerini yürütmektedir.
+
+      p(class='mb-2 lg:mb-4')
+        | Enerji sektöründe; Doğu Aras, Aras Elektrik Dağıtım ve Aras Epsaş Perakende, Erzurum, Ağrı, Erzincan, Bayburt, Kars, 
+        | Ardahan, Iğdır olmak üzere 7 şehir 58 ilçe ile 4.500 köy ve beldede 52 bin km hat uzunluğunda enerjinin kaliteli ve 
+        | kesintisiz sağlanması için hizmet vermektedir. Ayrıca yenilenebilir enerji üretimi (GES) yatırımları da hızla devam 
+        | etmektedir. 
+
+      p(class='mb-2 lg:mb-4')
+        | Gıda Sektöründe; 2004 yılından itibaren Kütahya’da bulunan ‘’Kütahya Şeker Fabrikası’’ ile şeker üretimi yapan Holding, ‘’ 
+        | Kütahya Sera AVM’’nin yatırımcısı ve işletmecisidir. 
+
+      p(class='mb-2 lg:mb-4')
+        | Yatırımlarıyla taşımacılık sektöründeki faaliyetlerini hızlandıran Kiler Holding’in bünyesinde yer alan ve ülkenin en önemli 
+        | taşıma şirketlerinden biri hâline gelen Turex firması 10.000’in üzerinde araç filosuyla kurumsal müşterilerine Türkiye’nin 37 
+        | ilinde personel taşımacılığı hizmeti sunmaktadır.
+
+      p(class='mb-2 lg:mb-4')
+        | Holdingin en yeni yatırımı ise Sanayi alanında olmuştur. Kiler İplik “Open-End ve Ring-İplik Üretim Tesisi’’ mizin, 2024 yılının 
+        | Ağustos ayında açılışı gerçekleşmiştir.
+  section(class='swiper-section relative lg:py-24 bg-secondary w-full')
+    div(class='container grid grid-cols-2 items-center')
+      div
+        div(class='swiper-container pb-12')
+          div(class='swiper-wrapper')
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") AMACIMIZ
+                p(class="") 
+                  | Kiler Holding olarak temel amacımız, hizmet ürettiğimiz tüm alanlarda ve coğrafyalarda her bir bireyden başlayarak tüm insanların yaşam kalitesini yükseltmek ve yarattığımız katma değerle ülkemiz ekonomisinin gelişimine katkıda bulunmaktır.
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") HEDEFİMİZ
+                p(class="") 
+                  | Çalışanlarımız, tedarikçilerimiz, iş ortaklarımız ve müşterilerimiz nezdinde oluşturduğumuz güveni en temel sinerji kaynağı kabul ederek faaliyette bulunduğumuz sektörlerde liderliğe ulaşmak ve insanların yaşam kalitesini yükseltebileceğimiz yeni hizmet alanlarında yatırımlar yaparak istikrarlı bir büyüme gerçekleştirmektir.
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") DEĞERLERİMİZ
+                p(class="") 
+                  | Kiler geçmişten bugüne bağlı olduğu değerleri koruyarak faaliyet gösteren bir grup olmuştur. Bu değerler geçmişte olduğu gibi bugün de Kiler Holding’in büyümesini ve faaliyetlerini yönlendirmeye devam etmektedir.
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") ÖNCE İNSAN GELİR
+                p(class="") 
+                  | Çalışanlarımız, müşterilerimiz, tedarikçilerimiz ve iş ortaklarımız bizim için değerlidir ve yaptığımız tüm işlerin özünde insan hayatını, sağlığını, güvenliğini, mutluluğunu korumak ve yükseltmek yatar. Bu prensip üretimden, hizmete, tüm yatırım, organizasyon ve faaliyetlerimizi şekillendiren en temel unsurdur.
+            div(class='swiper-slide')
+                div()
+                  div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") DÜRÜSTLÜK ve ADALET TİCARETİN TEMELİDİR
+                  p(class="") 
+                    | Dürüst olmak, çalışanlarımıza, iş ortaklarımıza ve müşterilerimize karşı adaletli yaklaşmak başarımızın anahtarlarından biridir. Hizmet ürettiğimiz tüm alanlarda yaptığımız işler ne mutlu ki toplum nezdinde dürüstlüğümüzün her gün defalarca test edilmesine imkân tanımaktadır.
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") PAYLAŞMAK GÜZELDİR
+                p(class="") 
+                  | Paylaşmayı bilmek kazanmayı bilmekten çok daha önemlidir. Bizim öncelikli hedefimiz vatandaşımızın ve ülkemizin genel refah seviyesini yükseltecek sosyal faaliyetler ve projeler geliştirmektir. Hepimizin bildiği gibi toplumumuz kalkınmazsa ekonomi kalkınmaz, ekonomi kalkınmazsa da ülkemiz kalkınamaz. 
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") SÜREKLİ GELİŞMEK ESASTIR
+                p(class="") 
+                  | Öğrenmek sonu gelmeyen bir uğraştır. Kişiler gibi kurumlar da sürekli yeni şeyler öğrenmek ve öğrendiklerini hayata geçirerek gelişmek zorundadır. Profesyonel yöneticilerimiz de dahil  tüm kademelerinde öğrenen, yenilikçi ve gelişmeye açık bir organizasyon olarak yapılanan Kiler için, çağın tüm gereklerini işine entegre ederek sürekli gelişmeye devam etmektedir.
+
+      div(class='flex justify-center items-center gap-5')
+        div(class='swiper-button-prev !w-12 !h-12 !relative !bg-none !left-0 !right-0')
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6799 25.1987L30.48 33.8886C30.7092 34.0956 30.8401 34.3901 30.8401 34.6992C30.8401 35.0078 30.7092 35.3022 30.48 35.5092C29.9958 35.9619 29.2439 35.9619 28.7603 35.5087L19 25.3085L28.92 15.1786C29.4012 14.7294 30.1489 14.7294 30.6301 15.1791C30.8596 15.3881 30.9906 15.6835 30.9906 15.9941C30.9906 16.3041 30.8596 16.6 30.63 16.8085L22.75 25.3686" fill="white"/>
+          </svg>
+        div(class='swiper-button-next !w-12 !h-12 !relative !bg-none !left-0 !right-0')
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.3201 25.1987L19.52 33.8886C19.2908 34.0956 19.1599 34.3901 19.1599 34.6992C19.1599 35.0078 19.2908 35.3022 19.52 35.5092C20.0043 35.9619 20.7562 35.9619 21.2399 35.5087L31 25.3085L21.08 15.1786C20.5989 14.7294 19.8512 14.7294 19.37 15.1791C19.1404 15.3881 19.0093 15.6835 19.0093 15.9941C19.0093 16.3041 19.1403 16.6 19.37 16.8085L27.25 25.3686" fill="white"/>
+          </svg>

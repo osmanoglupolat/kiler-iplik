@@ -1,0 +1,93 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "Page Meta Title"
+    - var pageDescription = "Page Meta Desc"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    h1(class='banner-title') 
+      | Kiler İplik Open-End ve Ring İplik
+      | Üretim Tesisi Görüntüleri ve
+      | Basın Yansımaları
+  
+  div(class='container mt-6 lg:mt-12')
+    div(class="lg:grid lg:grid-cols-3 flex flex-col gap-8")
+      div(class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'news-1.jpg' alt='news-1' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+        | “Open-End ve Ring-İplik Üretim Tesisi”, Sayın Cumhurbaşkanımız Recep Tayyip Erdoğan’ın teşrifleriyle açıldı.
+      div(class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'news-2.jpg' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Bitlis'te "Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni düzenlendi
+      div(class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'news-3.jpg' alt='news-3' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | "Hedefimiz Bitlisten bir tekstil markası çıkarmak"
+
+  div(class='container mt-6 lg:mt-12')
+    
+    div(class="lg:grid lg:grid-cols-2 flex flex-col gap-12 mb-6 lg:mb-12")
+
+      // featured news col
+      div(class="featured-news")
+        div(class='aspect-600/900 rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'news-lg.jpg' alt='news-lg' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Kiler Holding'den 200 Milyon Dolarlık İplik Fabrikası Yatırımı
+
+      // news swiper col
+      div(class='')
+        // thumb swiper
+        div(class='swiper thumb-swiper')
+          div(class='swiper-wrapper')
+            div(class='swiper-slide')
+              div(class='aspect-500/650 rounded-3xl overflow-hidden')
+                img(src=dirAssets + 'slide-1.jpg' alt='slide-1' class='w-full h-full object-cover')
+            div(class='swiper-slide')
+              div(class='aspect-500/650 rounded-3xl overflow-hidden')
+                img(src=dirAssets + 'slide-1.jpg' alt='slide-1' class='w-full h-full object-cover')
+            div(class='swiper-slide')
+              div(class='aspect-500/650 rounded-3xl overflow-hidden')
+                img(src=dirAssets + 'slide-1.jpg' alt='slide-1' class='w-full h-full object-cover')
+            div(class='swiper-slide')
+              div(class='aspect-500/650 rounded-3xl overflow-hidden')
+                img(src=dirAssets + 'slide-1.jpg' alt='slide-1' class='w-full h-full object-cover')
+            div(class='swiper-slide')
+              div(class='aspect-500/650 rounded-3xl overflow-hidden')
+                img(src=dirAssets + 'slide-1.jpg' alt='slide-1' class='w-full h-full object-cover')
+
+        // main swiper navigation
+        div(class='grid grid-cols-12 items-center gap-4 lg:gap-8 mt-4 lg:mt-10')
+          div(class='flex gap-1 lg:gap-5 col-span-3')
+              div(class='swiper-button-prev !w-12 !h-12 !relative !bg-none !left-0 !right-0 !mt-0 after:!hidden')
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6799 25.1987L30.48 33.8886C30.7092 34.0956 30.8401 34.3901 30.8401 34.6992C30.8401 35.0078 30.7092 35.3022 30.48 35.5092C29.9958 35.9619 29.2439 35.9619 28.7603 35.5087L19 25.3085L28.92 15.1786C29.4012 14.7294 30.1489 14.7294 30.6301 15.1791C30.8596 15.3881 30.9906 15.6835 30.9906 15.9941C30.9906 16.3041 30.8596 16.6 30.63 16.8085L22.75 25.3686" fill="white"/>
+                </svg>
+              div(class='swiper-button-next !w-12 !h-12 !relative !bg-none !left-0 !right-0 !mt-0 after:!hidden')
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M27.3201 25.1987L19.52 33.8886C19.2908 34.0956 19.1599 34.3901 19.1599 34.6992C19.1599 35.0078 19.2908 35.3022 19.52 35.5092C20.0043 35.9619 20.7562 35.9619 21.2399 35.5087L31 25.3085L21.08 15.1786C20.5989 14.7294 19.8512 14.7294 19.37 15.1791C19.1404 15.3881 19.0093 15.6835 19.0093 15.9941C19.0093 16.3041 19.1403 16.6 19.37 16.8085L27.25 25.3686" fill="white"/>
+                </svg>
+          div(class='col-span-9')
+            // main swiper
+            div(class='swiper main-swiper')
+              div(class='swiper-wrapper items-center')
+                div(class='swiper-slide')
+                  div(class="lg:text-xl") AMACIMIZ
+                div(class='swiper-slide')
+                  div(class="lg:text-xl") HEDEFİMİZ
+                div(class='swiper-slide')
+                  div(class="lg:text-xl") DEĞERLERİMİZ
+                div(class='swiper-slide')
+                  div(class="lg:text-xl") ÖNCE İNSAN GELİR
+                div(class='swiper-slide')
+                  div(class="lg:text-xl") DÜRÜSTLÜK ve ADALET TİCARETİN TEMELİDİR

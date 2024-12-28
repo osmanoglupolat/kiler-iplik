@@ -9,49 +9,29 @@ block prepend head
 block content
   div(class='aspect-square lg:aspect-1920/560 relative -z-10')
     img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
-    h1(class='absolute bottom-0 mb-8 w-full flex justify-center text-2xl lg:inline-block lg:pl-24 lg:text-3xl font-bold') VİZYONUMUZ - MİSYONUMUZ
+    h1(class='banner-title')  AR-GE YATIRIMI
 
-  h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12') VİZYONUMUZ
-  
-  div(class='flex flex-col gap-10 lg:gap-24')
-    section(class='section-bg-reverse')
-      div(class='container')
-        div(class='section-row')
-          div(class='lg:w-1/2')
-            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
-                img(src=dirAssets + 'vizyon-1.jpg' alt='vizyon-1' class='w-full h-full object-cover')
-          div(class='flex flex-col lg:items-end lg:w-1/2')
-            div(class='section-title')
-            h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:text-right lg:max-w-[300px]')
-                | ÜLKE EKONOMİSİNE
-                | KATKI SAĞLAMAK
-            div(class='section-content')
-              p(class='text-lg lg:text-xl lg:text-right')
-              | Üretimde kullanılacak pamuk Ege Bölgesi'nden temin edilmektedir. Bu sayede pamuk çiftçisine 48 milyon dolar katkı sağlanması öngörülmektedir. Yıllık ortalama 75 milyon dolar ciro hedefiyle yurt içi satışlarla ithalatın büyük ölçüde azaltılması ve ülkemize değer kazandırılması amaçlanmıştır.
-    
-    section(class='section-bg')
-      div(class='container')
-        div(class='section-row')
-          div(class='lg:w-1/2')
-            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
-                img(src=dirAssets + 'vizyon-2.jpg' alt='vizyon-2' class='w-full h-full object-cover')
-          div(class='flex flex-col lg:items-end lg:w-1/2')
-            div(class='section-title')
-              h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:text-right lg:max-w-[300px]')
-                | KADIN İSTİHDAMINI
-                | ÖNEMSEMEK
-            div(class='section-content')
-              p(class='text-lg lg:text-xl lg:text-right')
-              | Üretim tesisimizde kadın çalışanlara öncelik verilerek %65 oranında kadın istihdamı sağlanmıştır. Bu yaklaşım ile yalnızca Bitlis bölgesinde değil, Türkiye genelinde de kadın istihdamının önemi ve farklı sektörlerde de örnek alınarak kadın istihdamının artışına destek olunması hedeflenmiştir.
+  section(class='container max-w-screen-md py-12')
+    p(class='text-center') 
+      | İşletmenin sürdürülebilir büyüme ve başarısı için AR-GE bölümümüz vazgeçilmez bir faktördür. Kiler İplik Ar-Ge bölümümüz, ürettiğimiz ipliklerin kalitesini ve performansını en üst düzeyde tutmak için büyük bir titizlikle çalışmaktadır. İpliklerimiz, dayanıklılık, esneklik, renk tutuculuk ve aşınma direnci gibi özelliklerin test edildiği kapsamlı kalite kontrol süreçlerinden geçmektedir. Son teknolojiye sahip laboratuvarlarımızda gerçekleştirilen bu testler, müşterilerimize uluslararası standartlarda ürünler sunmamızı sağlamaktadır.
 
-  h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12') MİSYONUMUZ  
-  section(class='section-bg-reverse')
-    div(class='container')
-      div(class='section-row')
-        div(class='lg:w-1/2')
-          div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
-              img(src=dirAssets + 'misyon.jpg' alt='misyon' class='w-full h-full object-cover')
-        div(class='flex flex-col lg:items-end lg:w-1/2')
-          div(class='section-content')
-            p(class='text-lg lg:text-xl lg:text-right')
-            | Müsyonumuz, üretim, ihracat, istihdam ve büyümeyi desteklemek amacıyla, ülkemizin kalkınma hedefleriyle uyumlu tesisler geliştirmek ve değer yaratmaktır.
+  section(class='section-bg before:top-0 py-6')
+    div(class='container text-center')
+      h2(class='text-lg py-4 lg:py-6 lg:text-xl')
+        | AR-GE YATIRIMI GÖRSELLERİ
+    div(class='container mb-8 lg:mb-12 lg:max-w-screen-lg')
+      div(class='swiper swiper-trigger pb-12')
+        div(class='swiper-wrapper')
+          div(class='swiper-slide')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'slide-1.jpg' alt='slide-1' class='w-full h-full object-cover')
+          div(class='swiper-slide')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'slide-2.jpg' alt='slide-2' class='w-full h-full object-cover')
+          div(class='swiper-slide')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'slide-3.jpg' alt='slide-3' class='w-full h-full object-cover')
+        div(class='swiper-pagination')
+        div(class='swiper-button-prev')
+        div(class='swiper-button-next')
+

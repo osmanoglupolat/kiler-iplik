@@ -30,13 +30,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
   handleNavigation.init();
 
-  new Swiper(".swiper-container", {
+  new Swiper(".swiper-trigger", {
     // loop: true,
-    nextButton: ".swiper-button-next",
-    prevButton: ".swiper-button-prev",
-    pagination: ".swiper-pagination",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     paginationClickable: true,
     slidesPerView: 1,
     spaceBetween: 20,
   });
+
+  // thumbs swiper
+  // Initialize the thumbnail swiper
+  const thumbSwiper = new Swiper(".thumb-swiper", {
+    // loop: false,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    // freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  // Initialize the main swiper
+  const mainSwiper = new Swiper(".main-swiper", {
+    // loop: false,
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: thumbSwiper,
+    },
+  });
+
+  if (thumbSwiper && mainSwiper) {
+    // Sync main swiper when thumb swiper changes
+    thumbSwiper.on("slideChange", function () {
+      const activeIndex = thumbSwiper.activeIndex;
+      mainSwiper.slideTo(activeIndex);
+    });
+  }
+
 });

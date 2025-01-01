@@ -25,10 +25,10 @@ module.exports = {
     new PugPlugin({
       entry, // Dinamik olarak oluşturulan entry nesnesini kullan
       js: {
-        filename: "js/[name].[contenthash:8].js",
+        filename: "assets/[name].[contenthash:8].js",
       },
       css: {
-        filename: "css/[name].[contenthash:8].css",
+        filename: "assets/[name].[contenthash:8].css",
       },
     }),
   ],
@@ -43,7 +43,7 @@ module.exports = {
         test: /\.(ico|png|jp?g|webp|svg)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'img/[name].[hash:8][ext][query]',
+          filename: 'assets/[name].[hash:8][ext][query]',
         },
       },
     ],

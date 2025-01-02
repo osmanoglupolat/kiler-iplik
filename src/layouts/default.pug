@@ -50,6 +50,7 @@ html(lang=lang, dir=dir)
         main.d-flex.flex-column
             block content
                 h1(style="margin: 100px 0; text-align: center;") page content here
-        // CONTENT
+        
         block footer
-            include ../includes/footer
+            if footerEnable === 'true'
+                include ../includes/footer

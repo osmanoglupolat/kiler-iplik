@@ -1,0 +1,48 @@
+{
+ "name": "webpack-tailwind-pug",
+ "version": "1.0.1",
+ "description": "How to use Tailwind CSS with Pug",
+ "keywords": [
+  "webpack",
+  "tailwind",
+  "tailwindcss",
+  "css",
+  "pug",
+  "plugin",
+  "loader",
+  "pug-plugin",
+  "pug-loader"
+ ],
+ "license": "ISC",
+ "author": "webdiscus (https://github.com/webdiscus)",
+ "maintainers": [
+  "webdiscus (https://github.com/webdiscus)"
+ ],
+ "funding": {
+  "type": "patreon",
+  "url": "https://patreon.com/biodiscus"
+ },
+ "homepage": "https://github.com/webdiscus/webpack-tailwind-pug",
+ "bugs": {
+  "url": "https://github.com/webdiscus/webpack-tailwind-pug/issues"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/webdiscus/webpack-tailwind-pug.git"
+ },
+ "scripts": {
+  "build": "webpack",
+  "start": "webpack serve"
+ },
+ "devDependencies": {
+  "css-loader": "^7.1.2",
+  "postcss": "^8.4.47",
+  "postcss-loader": "^8.1.1",
+  "postcss-preset-env": "^10.0.6",
+  "pug-plugin": "^5.3.0",
+  "tailwindcss": "^3.4.13",
+  "webpack": "^5.95.0",
+  "webpack-cli": "^5.1.4",
+  "webpack-dev-server": "^5.1.0"
+ }
+}

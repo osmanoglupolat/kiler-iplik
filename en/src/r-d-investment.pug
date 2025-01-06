@@ -1,0 +1,39 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - R&D INVESTMENT"
+    - var pageDescription = "R&D INVESTMENT"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    div(class='banner-title') 
+      h1 
+        | R&D INVESTMENT
+
+  section(class='container max-w-screen-md py-12')
+    p(class='text-center') 
+      | Our R&D department is a cornerstone of our sustainable growth and success. Dedicated to maximizing the quality and performance of our yarns, the department meticulously conducts extensive quality control processes, testing properties such as durability, flexibility, color retention, and abrasion resistance. These tests, carried out in our state-of-the-art laboratories, enable us to deliver products that meet international standards.
+
+  section(class='section-bg before:top-0 py-6 mb-12')
+    div(class='container text-center')
+      h2(class='text-lg py-4 lg:py-6 lg:text-xl')
+        | R&D INVESTMENT IMAGES
+    div(class='container mb-8 lg:mb-12 lg:max-w-screen-lg')
+      div(class='swiper swiper-trigger !pb-12')
+        div(class='swiper-wrapper')
+          div(class='swiper-slide')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'slide-1.jpg' alt='slide-1' class='w-full h-full object-cover')
+          div(class='swiper-slide')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'slide-2.jpg' alt='slide-2' class='w-full h-full object-cover')
+          div(class='swiper-slide')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'slide-3.jpg' alt='slide-3' class='w-full h-full object-cover')
+        div(class='swiper-pagination')
+        div(class='swiper-button-prev')
+        div(class='swiper-button-next')
+

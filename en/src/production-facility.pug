@@ -1,0 +1,58 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - OUR PRODUCTION FACILITY"
+    - var pageDescription = "THE LARGEST YARN PRODUCTION FACILITY UNDER SINGLE ROOF IN TÜRKİYE"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    div(class='banner-title') 
+      h1 
+        | OUR PRODUCTION FACILITY
+  div(class='flex flex-col gap-10 mb-12 lg:mb-24 lg:gap-24')
+    section(class='section-bg before:lg:rounded-tl-none')
+      div(class='container')
+        div(class='section-row')
+          div(class='lg:w-1/2')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+                img(src=dirAssets + 'tesis-1.jpg' alt='tesis-1' class='w-full h-full object-cover')
+          div(class='flex flex-col lg:w-1/2')
+            div(class='section-title')
+              h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:max-w-[300px]')
+                | THE LARGEST YARN PRODUCTION FACILITY UNDER SINGLE ROOF IN TÜRKİYE
+            div(class='section-content')
+              p(class='text-lg lg:text-xl')
+                | Phase 1 of the Kiler Yarn Open-End and Ring Yarn Production Facility, located in Bitlis, began operations with a modern production infrastructure and a large-scale area. 
+              p(class='text-lg lg:text-xl')
+                | With 60,631 square meters of indoor space, our facility represents an investment volume of $200 million.
+    
+    section(class='section-bg-reverse')
+      div(class='container')
+        div(class='section-row')
+          div(class='lg:w-1/2')
+              div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+                  img(src=dirAssets + 'tesis-2.jpg' alt='tesis-2' class='w-full h-full object-cover')
+          div(class='flex flex-col lg:w-1/2')
+            div(class='section-title')  
+              h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:max-w-[300px]')
+                | SUSTAINABLE ENERGY APPROACH
+            div(class='section-content')
+              p(class='text-lg lg:text-xl')
+                | Our primary focus in production processes is the use of sustainable energy sources. All our investments in energy efficiency and environmentally friendly technologies are aimed at conserving natural resources and supporting renewable energy.
+
+    section(class='section-bg')
+      div(class='container')
+        div(class='section-row')
+          div(class='lg:w-1/2')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+                img(src=dirAssets + 'misyon.jpg' alt='misyon' class='w-full h-full object-cover')
+          div(class='flex flex-col lg:w-1/2')
+            div(class='section-title')
+              h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:max-w-[300px]')
+                | PRODUCTION VOLUME: FROM COTTON TO YARN
+            div(class='section-content')
+              p(class='text-lg lg:text-xl')
+                | Our facility has the capacity to process 65 tons of cotton and produce 50 tons of yarn daily. Thanks to our advanced production line and efficient process management, we transform raw materials into premium-quality yarns, offering high-standard products to the industry. This production capacity allows us to respond quickly and effectively to customer demands while maintaining a sustainable and stable production model.

@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #002444;
+    --foreground: #ffffff;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  @keyframes toTop {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateY(90px);
+      opacity: 0.1;
+    }
+    20% {
+      transform: translateY(80px);
+      opacity: 0.2;
+    }
+    30% {
+      transform: translateY(70px);
+      opacity: 0.3;
+    }
+    40% {
+      transform: translateY(60px);
+      opacity: 0.4;
+    }
+    50% {
+      transform: translateY(50px);
+      opacity: 0.5;
+    }
+    60% {
+      transform: translateY(40px);
+      opacity: 0.8;
+    }
+    70% {
+      transform: translateY(30px);
+      opacity: 0.7;
+    }
+    80% {
+      transform: translateY(20px);
+      opacity: 0.8;
+    }
+    90% {
+      transform: translateY(10px);
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@layer utilities {
+  .banner-title {
+    @apply text-2xl lg:text-3xl font-bold px-12 pr-4 lg:px-0 lg:max-w-[1200px] mx-auto mb-6 absolute inset-0 flex items-end;
+  }
+
+  .banner-title h1 {
+    @apply lg:max-w-[600px];
+  }
+
+  .section-bg {
+    @apply relative lg:py-10 before:bg-secondary before:absolute before:top-16 before:rounded-3xl before:lg:right-0 before:lg:top-0 before:lg:left-1/3 before:inset-0 before:lg:rounded-tl-[80px] before:lg:rounded-tr-none before:lg:rounded-bl-[80px] before:lg:rounded-br-none before:-z-10;
+  }
+
+  .section-bg-reverse {
+    @apply relative lg:py-10 before:bg-secondary before:absolute before:top-16 before:rounded-3xl before:lg:left-0 before:lg:top-0 before:lg:right-1/3 before:inset-0 before:lg:rounded-tr-[80px] before:lg:rounded-br-[80px] before:lg:rounded-tl-none before:lg:rounded-bl-none before:-z-10;
+  }
+
+  .section-row {
+    @apply flex flex-col lg:flex-row lg:gap-14 lg:items-center gap-8;
+  }
+
+  .section-bg-reverse .section-row {
+    @apply flex flex-col lg:gap-14 lg:items-center lg:flex-row-reverse gap-8;
+  }
+
+  .section-bg-reverse .section-title,
+  .section-bg-reverse .section-content {
+    @apply lg:flex lg:justify-end lg:text-right;
+  }
+
+  .container {
+    @apply mx-auto px-12 pr-4 lg:px-0 lg:max-w-[1200px];
+  }
+
+  .form-element {
+    @apply appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none bg-transparent placeholder:text-white;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background: white !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background: transparent !important;
+  border: 2px solid white !important;
+}
+
+.swiper > .swiper-button-next,
+.swiper > .swiper-rtl,
+.swiper > .swiper-button-prev {
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDciIGhlaWdodD0iNDciIHZpZXdCb3g9IjAgMCA0NyA0NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIzLjk5ODMgMC45ODgyODJDMTEuMzEwNCAwLjk4ODI4MiAwLjk4ODI4MSAxMS4zMTAzIDAuOTg4MjgxIDIzLjk5ODNDMC45ODgyODEgMzYuNjg2MyAxMS4zMTAzIDQ3LjAwODMgMjMuOTk4MyA0Ny4wMDgzQzM2LjY4NjMgNDcuMDA4MyA0Ny4wMDgzIDM2LjY4NjMgNDcuMDA4MyAyMy45OTgzQzQ3LjAwODMgMTEuMzEwNCAzNi42ODYzIDAuOTg4MjgyIDIzLjk5ODMgMC45ODgyODJaTTMyLjcxNjMgMjQuNzE2M0wyMC43MTYzIDM2LjcxNjNDMjAuNTIwMyAzNi45MTIzIDIwLjI2NDMgMzcuMDA4MyAyMC4wMDgzIDM3LjAwODNDMTkuNzUyNCAzNy4wMDgzIDE5LjQ5NjQgMzYuOTEwMyAxOS4zMDA0IDM2LjcxNjNDMTguOTEwNCAzNi4zMjYzIDE4LjkxMDQgMzUuNjkyMyAxOS4zMDA0IDM1LjMwMjNMMzAuNTkyMyAyNC4wMTAzTDE5LjMwMjQgMTIuNzE2NEMxOC45MTI0IDEyLjMyNjQgMTguOTEyNCAxMS42OTI0IDE5LjMwMjQgMTEuMzAyNEMxOS42OTI0IDEwLjkxMjQgMjAuMzI2MyAxMC45MTI0IDIwLjcxNjMgMTEuMzAyNEwzMi43MTYzIDIzLjMwMjNDMzMuMTA2MyAyMy42OTIzIDMzLjEwNjMgMjQuMzI2MyAzMi43MTYzIDI0LjcxNjNaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);
+}
+
+.swiper > .swiper-button-next::after,
+.swiper > .swiper-rtl::after,
+.swiper > .swiper-button-prev::after {
+  display: none;
+}
+
+.swiper > .swiper-button-prev {
+  transform: rotate(180deg);
+}

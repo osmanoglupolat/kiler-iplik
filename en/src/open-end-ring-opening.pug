@@ -1,0 +1,71 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - Kiler İplik Open-End ve Ring İplik Üretim Tesisi Açılışı ve Basın Yansımaları"
+    - var pageDescription = "Kiler İplik Open-End ve Ring İplik Üretim Tesisi Açılışı ve Basın Yansımaları"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    div(class='banner-title') 
+      h1
+        | Kiler İplik Open-End ve Ring İplik Üretim Tesisi Açılışı ve Basın Yansımaları
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Geri
+      img(src=dirAssets + 'sabah.png' alt='logo' class='max-w-[200px] mr-auto')
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | “Open-End ve Ring-İplik Üretim Tesisi”,
+      | Sayın Cumhurbaşkanımız Recep Tayyip Erdoğan’ın
+      | teşrifleriyle açıldı.
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | Kiler Holding tarafından 85 milyon dolar yatırımla Bitlis’te hayata geçirilen “Open-End ve Ring-İplik Üretim Tesisi”, Başkan Recep Tayyip Erdoğan’ın teşrifleriyle açıldı. Enerjisinin tamamını ‘yenilenebilir enerji’den elde edecek Tesis, yüzde 65 kadın çalışan oranıyla Bitlis’in istihdamına katkı sağlamayı hedefliyor.
+      
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'news-detail.jpg' alt='index-1' class='w-full h-full object-cover')
+      
+      p(class='mb-2 lg:mb-4')
+        | Kiler Holding grup şirketlerinden Kiler Tekstil Enerji ve Yatırım A.Ş.'ye ait "Open-End ve Ring-İplik Üretim 
+        | Tesisi" Kiler İplik Fabrikası, 60 bin 631 (yaklaşık 8,5 futbol sahası) metrekaresi kapalı alanda olmak üzere 
+        |toplam 200 bin metrekare (28 futbol sahası) arazi üzerine kuruldu.
+      p(class='mb-2 lg:mb-4')
+        | Tek çatı altında Türkiye'nin en büyük iplik üretim tesisi özelliğine sahip Kiler İplik Fabrikası açılışında 
+        | konuşan Kiler Holding Yönetim Kurulu Başkan Vekili Vahit Kiler, "Kiler ailesi olarak yaptığımız her yatırımı, 
+        | attığımız her adımı ülkemizin ekonomisine ve millî bağımsızlığına hizmet etmek olarak görüyoruz" dedi.
+      p(class='mb-2 lg:mb-4')
+        | Türkiye'nin yatırım, istihdam, üretim ve ihracat hedefleri doğrultusunda "Türkiye Yüzyılı"na ulaşmasını millî 
+        | bir sorumluluk olarak gördüklerinin altını çizen Vahit Kiler, Türkiye'nin fert başına gelir dağılımında 3. 
+        | yoksul ili olan Bitlis'in üretimine, istihdamına katkı sağlayacak Kiler İplik Fabrikası'nın kendileri için bir gurur 
+        | kaynağı olduğunu belirtti.
+      p(class='mb-2 lg:mb-4')
+        | Kiler Holding Yönetim Kurulu Başkan Vekili Vahit Kiler sözlerini şöyle sürdürdü:
+
+        | "Doğrudan 400 kişiye istihdam sağladığımız Tesisimizdeki kadın çalışan oranı yüzde 65. Yalnızca Bitlis'in 
+        | istihdamına değil, ülkemizin kadın istihdamına da katkı sunacağımız için memnuniyet duyuyoruz. Bitlis'in 
+        | bölgesinin 'parlayan yıldızı' olması için çalışmayı sürdürürken ülkemizin millî ekonomisine değer üretmek 
+        | için de yolumuzda ilerlemeye devam edeceğiz.
+      p(class='mb-2 lg:mb-4')
+        | Üretimde kullanılacak pamuğu Ege ve Çukurova'dan temin ederek, pamuk çiftçisine yıllık 48 milyon dolar 
+        | katkı sağlamayı planlıyoruz. Ayrıca yıllık ortalama 75 milyon dolar ciro sağlama öngörümüzle yurt içine 
+        | yapılacak satışlarla da ithalatı azaltıcı etkisi olacağını değerlendiriliyoruz."
+      p(class='mb-2 lg:mb-4')
+        | Kiler İplik Fabrikası'nda kullanılan makine ve teçhizat, son teknoloji ve enerji verimliliği dikkate alınarak 
+        | özel olarak üretildi. Kendi enerjisinin tamamını 'yenilenebilir enerji'den karşılayacak olan Tesis'in bölgenin 
+        | gelir dağılımına ve ekonomik kalkınmasına olumlu etki etmesi bekleniyor.
+      p(class='mb-2 lg:mb-4')
+        | Vahit Kiler: "Sözümüzü tutmaya devam ediyoruz!"
+      p(class='mb-2 lg:mb-4')
+        | Konuşmasında, Cumhurbaşkanı Erdoğan tarafından 2008 yılında açılan Bitlis Hikmet Kiler Fen Lisesi'nde 
+        | verdikleri sözü tutmaya devam ettiklerini hatırlatan Vahit Kiler şu ifadelerde bulundu:
+      p(class='mb-2 lg:mb-4')
+        | "Rahmetli babamız Hikmet Kiler adına yaptırdığımız okulun açılışında Sayın Cumhurbaşkanımıza 
+        | verdiğimiz sözü tutmaya devam ediyoruz. Bitlis Hikmet Kiler Fen Lisesi'nden üniversiteye giren tüm 
+        | öğrencilerimize eğitimleri sürecinde burs veriyoruz. Öğrencilerimiz ayrıca mezun olduklarında; istedikleri 
+        | takdirde grup şirketlerimizde işlerinin hazır olduğunu da biliyorlar!"

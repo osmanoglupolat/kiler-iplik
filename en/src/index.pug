@@ -1,0 +1,14 @@
+extends layouts/default.pug
+
+block prepend footer
+  - var footerEnable = "false"
+
+block prepend head
+  - var pageTitle = "KİLER İPLİK"
+  - var pageDescription = "Homepage"
+  - var pageName = "Home"
+  - var pageClass = "page-body-class"
+
+block content
+  div(class= 'flex items-center justify-center h-screen w-full overflow-hidden relative')
+    video(src=dirAssets + 'kiler_iplik_2.mp4' autoplay loop muted class='w-full h-full object-cover')

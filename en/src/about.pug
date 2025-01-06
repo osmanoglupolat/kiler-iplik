@@ -1,0 +1,89 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - ABOUT US"
+    - var pageDescription = "ABOUT US"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    div(class='banner-title') 
+      h1 
+        | ABOUT US
+
+  section(class='container py-12')
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | The foundations of Kiler Holding were established in 1983 by Hikmet Kiler and his sons Nahit, Vahit, and Ümit Kiler. The family entered the industry with their core business in food retailing. Continuing its growth and investments in sectors such as construction, transportation, energy, and industry, Kiler Holding today operates in six different sectors with nearly 30 companies and over 10,000 employees.
+        | Kiler Holding's short-term objective is to achieve steady growth by continuing its investments in construction, energy, transportation, and industry, aiming to rank among Türkiye’s top 10 most powerful companies.
+
+
+      p(class='mb-2 lg:mb-4')
+        | In the construction sector, many of the Holding’s investments in residential, commercial, and shopping center projects of various scales are carried out under the umbrella of Kiler REIT. Renowned for its “REFERANS” brand in residential projects, Kiler REIT responds to emerging living trends in metropolitan areas by developing people-oriented designs and high-quality construction projects in prime locations. Some of its notable projects include Istanbul Sapphire Residence, Referans Bakırköy, Referans Bahçeşehir, Referans Beşiktaş, Referans Beylikdüzü, Kütahya Sera Shopping Mall, Referans Göktürk, Zonguldak Westalife Shopping Mall, Referans Pendik, and the transformation project Sapphire Office. These projects are either completed, in the delivery phase, or ongoing. Biskon Yapı, a group company and the contractor for projects developed by Kiler REIT, also undertakes infrastructure and superstructure contracting projects.
+
+      p(class='mb-2 lg:mb-4')
+        | In the energy sector, Doğu Aras, Aras Elektrik Dağıtım, and Aras Epsaş Perakende provide reliable and uninterrupted energy services across seven cities, 58 districts, and 4,500 villages and towns, including Erzurum, Ağrı, Erzincan, Bayburt, Kars, Ardahan, and Iğdır, with a network spanning 52,000 km. Additionally, investments in renewable energy generation (solar power plants) are progressing rapidly.
+
+      p(class='mb-2 lg:mb-4')
+        | In the food sector, the Holding has been producing sugar since 2004 through the Kütahya Sugar Factory in Kütahya and is also the investor and operator of Kütahya Sera Shopping Center.
+
+      p(class='mb-2 lg:mb-4')
+        | Accelerating its activities in the transportation industry, Turex, a subsidiary of Kiler Holding and one of Türkiye’s leading transportation companies, provides personnel transportation services to corporate clients across 37 provinces with a fleet of over 10,000 vehicles.
+
+      p(class='mb-2 lg:mb-4')
+        | The Holding's most recent investment is in the industrial sector. Kiler İplik, "Open-End and Ring-Yarn Production Facility" was officially opened in August 2024.
+
+  section(class='swiper-section relative py-8 lg:py-24 bg-secondary w-full')
+    div(class='container lg:grid lg:grid-cols-2 items-center')
+      div
+        div(class='swiper swiper-trigger pb-12')
+          div(class='swiper-wrapper')
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") OUR GOAL
+                p(class="") 
+                  | As Kiler Holding, our primary goal is to enhance the quality of life for individuals in all areas and geographies where we operate, while contributing to the development of Türkiye’s economy through the value we create.
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") OUR TARGET
+                p(class="") 
+                  | To achieve leadership in the sectors we operate by building on the trust we have established with our employees, suppliers, business partners, and customers as our most fundamental source of synergy, and to ensure steady growth by investing in new service areas that improve people's quality of life.
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") OUR VALUES
+                p(class="") 
+                  | Kiler has always been a group that upholds the values it has embraced from the past to the present. These values continue to steer Kiler Holding's growth and operations today, just as they did in the past.
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") PEOPLE COME FIRST
+                p(class="") 
+                  | Our employees, customers, suppliers, and business partners are invaluable to us. At the heart of everything we do lies the commitment to safeguard and enhance human life, health, safety, and happiness. This principle is the cornerstone of all our investments, organizations, and activities, from production to service.
+            div(class='swiper-slide')
+                div()
+                  div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") HONESTY AND JUSTICE ARE THE FOUNDATION OF TRADE
+                  p(class="") 
+                    | Acting with honesty and fairness toward our employees, business partners, and customers is one of the key factors behind our success. We take pride in the fact that the work we carry out across all the areas where we provide services allows our integrity to be tested multiple times each day in the eyes of society.
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") SHARING IS GOOD
+                p(class="") 
+                  | Knowing how to share is far more important than knowing how to earn. Our primary goal is to develop social initiatives and projects that enhance the overall welfare of our citizens and our country. As we all recognize, if our society does not progress, the economy cannot advance, and without economic growth, our nation cannot thrive. 
+            div(class='swiper-slide')
+              div()
+                div(class="text-xl relative mb-3 pb-3 after:absolute after:w-[70px] after:h-[5px] after:bg-white after:bottom-0 after:left-0") CONTINUOUS IMPROVEMENT IS KEY
+                p(class="") 
+                  | Learning is an unending journey. Just like individuals, organizations must continuously learn and grow by putting what they learn into practice. For Kiler, which is structured as a learning, innovative, and development-oriented organization at all levels, including our professional managers, continuous development is a priority. By integrating all the demands of the modern age into our business, we ensure ongoing progress.
+
+      div(class='flex justify-center items-center gap-5 mt-6 lg:mt-0')
+        div(class='swiper-button-prev !w-12 !h-12 !relative !bg-none !left-0 !right-0 after:!hidden')
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6799 25.1987L30.48 33.8886C30.7092 34.0956 30.8401 34.3901 30.8401 34.6992C30.8401 35.0078 30.7092 35.3022 30.48 35.5092C29.9958 35.9619 29.2439 35.9619 28.7603 35.5087L19 25.3085L28.92 15.1786C29.4012 14.7294 30.1489 14.7294 30.6301 15.1791C30.8596 15.3881 30.9906 15.6835 30.9906 15.9941C30.9906 16.3041 30.8596 16.6 30.63 16.8085L22.75 25.3686" fill="white"/>
+          </svg>
+        div(class='swiper-button-next !w-12 !h-12 !relative !bg-none !left-0 !right-0 after:!hidden')
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="24" stroke="white" stroke-width="2"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.3201 25.1987L19.52 33.8886C19.2908 34.0956 19.1599 34.3901 19.1599 34.6992C19.1599 35.0078 19.2908 35.3022 19.52 35.5092C20.0043 35.9619 20.7562 35.9619 21.2399 35.5087L31 25.3085L21.08 15.1786C20.5989 14.7294 19.8512 14.7294 19.37 15.1791C19.1404 15.3881 19.0093 15.6835 19.0093 15.9941C19.0093 16.3041 19.1403 16.6 19.37 16.8085L27.25 25.3686" fill="white"/>
+          </svg>

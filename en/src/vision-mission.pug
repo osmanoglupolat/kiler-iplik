@@ -1,0 +1,57 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - OUR VISION - OUR MISSION"
+    - var pageDescription = "OUR VISION - OUR MISSION"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    div(class='banner-title') 
+      h1 
+        | OUR VISION - OUR MISSION
+
+  h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12') OUR VISION
+  
+  div(class='flex flex-col gap-10 lg:gap-24')
+    section(class='section-bg-reverse')
+      div(class='container')
+        div(class='section-row')
+          div(class='lg:w-1/2')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+                img(src=dirAssets + 'vizyon-1.jpg' alt='vizyon-1' class='w-full h-full object-cover')
+          div(class='flex flex-col lg:items-end lg:w-1/2')
+            div(class='section-title')
+            h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:text-right lg:max-w-[300px]')
+                | CONTRIBUTING TO THE COUNTRY'S ECONOMY
+            div(class='section-content')
+              p(class='text-lg lg:text-xl lg:text-right')
+              | The cotton used in production is sourced from the Aegean Region, with an estimated contribution of $48 million to cotton farmers. With an annual average turnover target of $75 million, we aim to significantly reduce imports through domestic sales, adding value to our country.
+    
+    section(class='section-bg before:lg:rounded-bl-none')
+      div(class='container')
+        div(class='section-row')
+          div(class='lg:w-1/2')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+                img(src=dirAssets + 'vizyon-2.jpg' alt='vizyon-2' class='w-full h-full object-cover')
+          div(class='flex flex-col lg:w-1/2')
+            div(class='section-title')
+              h2(class='py-4 lg:py-6 text-2xl lg:text-3xl lg:max-w-[300px]')
+                | SUPPORTING WOMEN'S EMPLOYMENT
+            div(class='section-content')
+              p(class='text-lg lg:text-xl lg:text-right')
+              | We prioritize female employment in our production facility, achieving a 65% female workforce. This approach not only emphasizes the importance of women’s employment in the Bitlis region but also sets an example for other sectors across Türkiye, encouraging the growth of women’s participation in the workforce.
+
+  h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12') OUR MISSION  
+  section(class='section-bg-reverse before:lg:rounded-br-none')
+    div(class='container')
+      div(class='section-row')
+        div(class='lg:w-1/2')
+          div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'misyon.jpg' alt='misyon' class='w-full h-full object-cover')
+        div(class='flex flex-col lg:items-end lg:w-1/2')
+          div(class='section-content')
+            p(class='text-lg lg:text-xl lg:text-right')
+            | Our R&D department is a cornerstone of our sustainable growth and success. Dedicated to maximizing the quality and performance of our yarns, the department meticulously conducts extensive quality control processes, testing properties such as durability, flexibility, color retention, and abrasion resistance. These tests, carried out in our state-of-the-art laboratories, enable us to deliver products that meet international standards.

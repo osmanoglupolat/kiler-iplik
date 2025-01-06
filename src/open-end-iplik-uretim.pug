@@ -1,0 +1,39 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - OPEN-END İPLİK ÜRETİMİ"
+    - var pageDescription = "OPEN-END İPLİK ÜRETİMİ"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    div(class='banner-title') 
+      h1 
+        | OPEN-END İPLİK ÜRETİMİ
+
+  section(class='container max-w-screen-md py-12')
+    p(class='text-center') 
+      | Open-end iplik üretiminde, üretimden paketlemeye kadar kullanılabilecek tüm aşamalarda tam otomasyon sistemi ile ilerliyoruz. Son teknoloji makinelerle donatılmış tesisimizde, yüksek kaliteli iplik üretimini odak noktamızda tutuyoruz. Bu sistem sayesinde, verimliliği artırırken aynı zamanda üretim süreçlerinde maksimum hassasiyet sağlıyoruz.
+
+  section(class='section-bg before:top-0 py-6 mb-12')
+    div(class='container text-center')
+      h2(class='text-lg py-4 lg:py-6 lg:text-xl')
+        | OPEN - END İPLİK ÜRETİMİ GÖRSELLERİ
+    div(class='container mb-8 lg:mb-12 lg:max-w-screen-lg')
+      div(class='swiper swiper-trigger !pb-12')
+        div(class='swiper-wrapper')
+          div(class='swiper-slide')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'slide-3.jpg' alt='slide-3' class='w-full h-full object-cover')
+          div(class='swiper-slide')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'slide-2.jpg' alt='slide-2' class='w-full h-full object-cover')
+          div(class='swiper-slide')
+            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
+              img(src=dirAssets + 'slide-1.jpg' alt='slide-1' class='w-full h-full object-cover')
+        div(class='swiper-pagination')
+        div(class='swiper-button-prev')
+        div(class='swiper-button-next')
+

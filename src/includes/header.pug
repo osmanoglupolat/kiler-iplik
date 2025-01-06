@@ -43,7 +43,8 @@ header(class='grid grid-cols-3 items-center lg:py-8 lg:px-12 py-4 px-4 fixed top
 
 
     div.flex.items-center.justify-center
-        img(src=dirAssets + '/kiler-logo.png' alt='kiler iplik logo' class='w-[200px] lg:w-[300px]')
+        a(href='/')
+            img(src=dirAssets + '/kiler-logo.png' alt='kiler iplik logo' class='w-[200px] lg:w-[300px]')
     div(class='ml-auto')
         a(href='javascript:void(0)' class='flex items-center gap-2' id='open-navigation')
             span(class='')
@@ -60,12 +61,30 @@ div(id='navigation' class='flex-col items-center gap-6 p-10 z-50 lg:py-12 lg:px-
             span(class='')
                 img(src=dirAssets + '/close.svg' alt='close' class='w-[20px]')
     ul(class='flex flex-col items-end w-full gap-6 mt-12 text-xl font-medium lg:mt-32')
-        li
-            a(href='#')
-                | Home
-        li
-            a(href='#')
-                | About
-        li
-            a(href='#')
-                | Contact
+        li.text-right
+            a(href='/')
+                | Anasayfa
+        li.text-right
+            a(href='/hakkimizda.html')
+                | Kurumsal
+        li.text-right
+            a(href='/ring-iplik-uretim.html')
+                | Ring İplik Üretimi
+        li.text-right
+            a(href='/open-end-iplik-uretim.html')
+                | Open-End İplik Üretimi
+        li.text-right
+            a(href='/tesis.html')
+                | Üretim Tesisimiz
+        li.text-right
+            a(href='/ar-ge-yatirim.html')
+                | AR-GE Yatırım Süreci
+        li.text-right
+            a(href='/galeri.html')
+                | Galeri
+        li.text-right
+            a(href='/haberler.html')
+                | Açılış ve Basın Yansımaları
+        li.text-right
+            a(href='/iletisim.html')
+                | İletişim

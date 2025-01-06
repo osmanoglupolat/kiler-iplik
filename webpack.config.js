@@ -17,6 +17,10 @@ const entry = Object.fromEntries(
 module.exports = {
   mode: 'production',
 
+  performance: {
+    hints: false,
+  },
+
   output: {
     path: path.join(__dirname, "dist"),
   },
@@ -40,7 +44,7 @@ module.exports = {
         use: ["css-loader", "postcss-loader"],
       },
       {
-        test: /\.(ico|png|jp?g|webp|svg)$/,
+        test: /\.(ico|png|jp?g|webp|svg|mp4)$/,
         type: 'asset/resource',
         generator: {
           filename: 'assets/[name].[hash:8][ext][query]',

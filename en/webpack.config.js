@@ -47,7 +47,14 @@ module.exports = {
         test: /\.(ico|png|jp?g|webp|svg|mp4)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/[name].[hash:8][ext][query]',
+          filename: 'assets/[name].[hash:8][ext]',
+        },
+      },
+      {
+        test: /\.pdf$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[name].[hash:8][ext]',
         },
       },
     ],

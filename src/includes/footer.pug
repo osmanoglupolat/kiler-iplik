@@ -1,3 +1,9 @@
+-
+    const aydinlatmaMetni = require('../assets/aydinlatma-metni.pdf')
+    const kvkkBasvuru = require('../assets/kvkk-basvuru-formu.pdf')
+    const kvkkPolitika = require('../assets/kvkk-politikasi.pdf')
+    const cerezPolitika = require('../assets/cerez-politikasi.pdf')
+
 footer(class='bg-white text-primary pb-8 pt-14 lg:pt-28')
     div(class='container bg-white grid gap-4 lg:grid-cols-5 lg:gap-4')
         div(class='flex justify-center lg:block')
@@ -43,10 +49,10 @@ footer(class='bg-white text-primary pb-8 pt-14 lg:pt-28')
     div(class='container bg-white mt-4 grid gap-2 lg:grid-cols-5 lg:gap-4 lg:mt-12')
         div 
         div(class='flex justify-center')
-            a(href='#') Aydınlatma Metni
+            a(href=aydinlatmaMetni target='_blank') Aydınlatma Metni
         div(class='flex justify-center')
-            a(href='#') KVKK Başvuru Formu
+            a(href=kvkkBasvuru target='_blank') KVKK Başvuru Formu
         div(class='flex justify-center')
-            a(href='#') KVKK Politikası
+            a(href=kvkkPolitika target='_blank') KVKK Politikası
         div(class='flex justify-center')
-            a(href='#') Çerez Politikası
+            a(href=cerezPolitika target='_blank') Çerez Politikası

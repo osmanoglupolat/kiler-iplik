@@ -1,14 +1,15 @@
 extends layouts/default.pug
 
 block prepend head
-    - var pageTitle = "KİLER İPLİK - HABERLER"
-    - var pageDescription = "HABERLER"
+    - var pageTitle = "KİLER İPLİK - NEWS"
+    - var pageDescription = "NEWS"
     - var pageName = "Home"
     - var pageClass = "page-body-class"
 
 block content
   div(class='aspect-square lg:aspect-1920/560 relative -z-10')
-    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    video(src=dirAssets + 'kiler_iplik_2.mp4' autoplay loop muted class='w-full h-full object-cover')
     div(class='banner-title') 
       h1 
         | Kiler İplik Open-End ve Ring İplik
@@ -22,16 +23,11 @@ block content
           img(src=dirAssets + 'news-1.jpg' alt='news-1' class='w-full h-full object-cover')
         div(class='mt-4 text-lg')
         | “Open-End ve Ring-İplik Üretim Tesisi”, Sayın Cumhurbaşkanımız Recep Tayyip Erdoğan’ın teşrifleriyle açıldı.
-      div(class="")
+      a(href='/en/bitlis-kamu-ozel-toplu-acilis.html' class="")
         div(class='aspect-gallery rounded-3xl overflow-hidden')
           img(src=dirAssets + 'news-2.jpg' alt='news-2' class='w-full h-full object-cover')
         div(class='mt-4 text-lg')
           | Bitlis'te "Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni düzenlendi
-      div(class="")
-        div(class='aspect-gallery rounded-3xl overflow-hidden')
-          img(src=dirAssets + 'news-3.jpg' alt='news-3' class='w-full h-full object-cover')
-        div(class='mt-4 text-lg')
-          | "Hedefimiz Bitlisten bir tekstil markası çıkarmak"
 
   div(class='container mt-6 lg:mt-12')
     

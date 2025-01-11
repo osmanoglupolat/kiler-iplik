@@ -7,11 +7,12 @@ block prepend head
     - var pageClass = "page-body-class"
 
 block content
-  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
-    img(src=dirAssets + 'contact-banner.jpg' alt='iletişim' class='w-full h-full object-cover')
-    div(class='banner-title') 
-      h1 
-        | CONTACT
+  div(class='relative')
+    //- img(src=dirAssets + 'contact-banner.jpg' alt='iletişim' class='w-full h-full object-cover')
+    div#map(class='w-full h-[450px] shadow-lg')
+
+    div(class='banner-title pointer-events-none') 
+      h1 CONTACT
 
   section(class='container py-12')
     div(class='lg:grid lg:grid-cols-3 flex flex-col gap-8')
@@ -20,7 +21,7 @@ block content
           div(class='w-12 h-12 lg:w-[150px] lg:h-[150px] p-4 lg:p-14 bg-secondary rounded-full flex items-center justify-center')
             img(src=dirAssets + 'location.svg' alt='iletişim' class='w-full')
         div(class="lg:text-center")
-          div Adres
+          div Address
           div(class='lg:text-center') 
             | Kiler İplik Fabrikası Karşıyaka Mahallesi Bitlis Yolu Caddesi No: 16/0 Rahva Yolu Mevkii, Tatvan/BİTLİS
       div(class='flex lg:flex-col lg:justify-center items-center gap-3')
@@ -28,7 +29,7 @@ block content
           div(class='w-12 h-12 lg:w-[150px] lg:h-[150px] p-4 lg:p-14 bg-secondary rounded-full flex items-center justify-center')
             img(src=dirAssets + 'phone.svg' alt='iletişim' class='w-full')
         div(class="lg:text-center")
-          div Telefon
+          div Phone
           div 
             a(href='tel:+905333333333' class='hover:underline') +90 533 333 33 33
       div(class='flex lg:flex-col lg:justify-center items-center gap-3')

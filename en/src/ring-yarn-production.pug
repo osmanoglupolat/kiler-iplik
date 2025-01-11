@@ -8,7 +8,8 @@ block prepend head
 
 block content
   div(class='aspect-square lg:aspect-1920/560 relative -z-10')
-    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    video(src=dirAssets + 'kiler_iplik_2.mp4' autoplay loop muted class='w-full h-full object-cover')
     div(class='banner-title') 
       h1 
         | RING YARN PRODUCTION 
@@ -27,12 +28,6 @@ block content
           div(class='swiper-slide')
             div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
               img(src=dirAssets + 'slide-2.jpg' alt='slide-2' class='w-full h-full object-cover')
-          div(class='swiper-slide')
-            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
-              img(src=dirAssets + 'slide-1.jpg' alt='slide-1' class='w-full h-full object-cover')
-          div(class='swiper-slide')
-            div(class='aspect-gallery rounded-3xl lg:rounded-[80px] overflow-hidden')
-              img(src=dirAssets + 'slide-3.jpg' alt='slide-3' class='w-full h-full object-cover')
         div(class='swiper-pagination')
         div(class='swiper-button-prev')
         div(class='swiper-button-next')

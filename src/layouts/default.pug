@@ -12,9 +12,9 @@ html(lang=lang, dir=dir)
             title=pageTitle
             meta(name="description" content=pageDescription)
 
-            // link(rel="apple-touch-icon" sizes="180x180" href=dirImages + "favicon/apple-touch-icon.png")
+            link(rel="apple-touch-icon" sizes="180x180" href=dirAssets + "kiler-square.png")
 
-            // link(rel="shortcut icon" href=dirImages + "favicon/favicon.png")
+            link(rel="shortcut icon" href=dirAssets + "kiler.png")
             
             meta(name="theme-color" content="#D72027")
 
@@ -39,6 +39,9 @@ html(lang=lang, dir=dir)
 
             // custom js
             script(src='./app.js')
+
+            block script
+                // scripts
 
     // BODY
     body(class=pageClass)

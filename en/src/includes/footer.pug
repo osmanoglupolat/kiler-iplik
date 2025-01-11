@@ -1,3 +1,9 @@
+-
+    const aydinlatmaMetni = require('../assets/aydinlatma-metni.pdf')
+    const kvkkBasvuru = require('../assets/kvkk-basvuru-formu.pdf')
+    const kvkkPolitika = require('../assets/kvkk-politikasi.pdf')
+    const cerezPolitika = require('../assets/cerez-politikasi.pdf')
+
 footer(class='bg-white text-primary pb-8 pt-14 lg:pt-28')
     div(class='container bg-white grid gap-4 lg:grid-cols-5 lg:gap-4')
         div(class='flex justify-center lg:block')
@@ -8,30 +14,30 @@ footer(class='bg-white text-primary pb-8 pt-14 lg:pt-28')
                 li
                     a(href='/en') Home
                 li
-                    a(href='/about.html') About
+                    a(href='/en/about.html') About
                 li
-                    a(href='/vision-mission.html') Vision
+                    a(href='/en/vision-mission.html') Vision
                 li
-                    a(href='/vision-mission.html') Mission
+                    a(href='/en/vision-mission.html') Mission
         div(class='flex justify-center lg:border-r-2 lg:border-b-0 border-b-2 border-r-0 border-primary py-4 lg:py-0 lg:px-3')
             ul(class='flex flex-col gap-4 font-bold items-center lg:items-start')
                 li
-                    a(href='/open-end-yarn-production.html') Open - End Yarn Production
+                    a(href='/en/open-end-yarn-production.html') Open - End Yarn Production
                 li
-                    a(href='/ring-yarn-production.html') Ring Yarn Production
+                    a(href='/en/ring-yarn-production.html') Ring Yarn Production
                 li
-                    a(href='/production-facility.html') Our Production Facility
+                    a(href='/en/production-facility.html') Our Production Facility
                 li
-                    a(href='/r-d-investment.html') R&D Investment
+                    a(href='/en/r-d-investment.html') R&D Investment
         div(class='flex justify-center lg:border-r-2 lg:border-b-0 border-b-2 border-r-0 border-primary py-4 lg:py-0 lg:px-3')
             ul(class='flex flex-col gap-4 font-bold items-center lg:items-start')
                 li
-                    a(href='/news.html') Opening and Press Releases
+                    a(href='/en/news.html') Opening and Press Releases
                 li
-                    a(href='/gallery.html') Gallery
+                    a(href='/en/gallery.html') Gallery
         div(class='flex justify-center')
             div(class='flex flex-col items-center max-w-72 lg:max-w-max lg:items-start')
-                a(href="/contact.html" class='font-bold border-b-2 border-primary') Contact
+                a(href="/en/contact.html" class='font-bold border-b-2 border-primary') Contact
                 hr(class='my-1')
                 p 
                     | Emniyet Evleri Mah. Eski Büyükdere Cad.No:1/1 Kat:7 34415 Kağıthane/İSTANBUL
@@ -43,10 +49,10 @@ footer(class='bg-white text-primary pb-8 pt-14 lg:pt-28')
     div(class='container bg-white mt-4 grid gap-2 lg:grid-cols-5 lg:gap-4 lg:mt-12')
         div 
         div(class='flex justify-center')
-            a(href='#') Disclaimer
+            a(href=aydinlatmaMetni target='_blank') Disclaimer
         div(class='flex justify-center')
-            a(href='#') PDPL Application Form
+            a(href=kvkkBasvuru target='_blank') PDPL Application Form
         div(class='flex justify-center')
-            a(href='#') PDPL Policy
+            a(href=kvkkPolitika target='_blank') PDPL Policy
         div(class='flex justify-center')
-            a(href='#') Cookie Policy
+            a(href=cerezPolitika target='_blank') Cookie Policy

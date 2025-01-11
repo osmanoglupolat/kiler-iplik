@@ -8,14 +8,15 @@ block prepend head
 
 block content
   div(class='aspect-square lg:aspect-1920/560 relative -z-10')
-    img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    video(src=dirAssets + 'kiler_iplik_2.mp4' autoplay loop muted class='w-full h-full object-cover')
     div(class='banner-title') 
       h1
         | Kiler İplik Open-End ve Ring İplik Üretim Tesisi Açılışı ve Basın Yansımaları
 
   section(class='container py-12')
     div(class="flex justify-center items-center")
-      a(href='/' class='mr-auto flex items-center hover:underline') 
+      a(href='/haberler.html' class='mr-auto flex items-center hover:underline') 
         <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
         span Geri
       img(src=dirAssets + 'sabah.png' alt='logo' class='max-w-[200px] mr-auto')

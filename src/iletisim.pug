@@ -5,13 +5,15 @@ block prepend head
     - var pageDescription = "İLETİŞİM"
     - var pageName = "Home"
     - var pageClass = "page-body-class"
+  
 
 block content
-  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
-    img(src=dirAssets + 'contact-banner.jpg' alt='iletişim' class='w-full h-full object-cover')
-    div(class='banner-title') 
-      h1 
-        | İLETİŞİM
+  div(class='relative')
+    //- img(src=dirAssets + 'contact-banner.jpg' alt='iletişim' class='w-full h-full object-cover')
+    div#map(class='w-full h-[450px] shadow-lg')
+
+    div(class='banner-title pointer-events-none') 
+      h1 İLETİŞİM
 
   section(class='container py-12')
     div(class='lg:grid lg:grid-cols-3 flex flex-col gap-8')

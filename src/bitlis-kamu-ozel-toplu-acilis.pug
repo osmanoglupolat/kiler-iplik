@@ -1,0 +1,75 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageDescription = "Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    video(src=dirAssets + 'kiler_iplik_2.mp4' autoplay loop muted class='w-full h-full object-cover')
+    div(class='banner-title') 
+      h1
+        | Bitlis'te "Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni" düzenlendi
+
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/haberler.html' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Geri
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Bitlis'te "Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni" düzenlendi
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, "Tüm dünya küresel ekonomik daralmalardan, krizlerden geçerken biz siyasi istikrarımızla gücümüze güç katıyor, asra bedel kalkınma hamlelerine yenilerini ekliyoruz." dedi.
+      
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'bitlis-kamu-ozel-toplu-acilis-toreni.jpg' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | Bitlis'te Cumhurbaşkanı Recep Tayyip Erdoğan'ın katılımıyla "Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni" düzenlendi.
+      p(class='mb-2 lg:mb-4')
+        | Kiler İplik Fabrikası önünde düzenlenen törende konuşan Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, açılışı yapılan her fabrikanın yörenin ekonomik kalkınmasına büyük katkı sağlayacağını söyledi.
+      p(class='mb-2 lg:mb-4')
+        | Kutlu Malazgirt Zaferi'nin 953. yıl dönümünde Kubbetü'l İslam'a yeni değerler kazandırmanın mutluluğunu yaşadıklarını belirten Kacır, "Sayın Cumhurbaşkanımızın liderliği ve kararlılığıyla tıpkı 953 yıl öncesindeki gibi çağın söz söyleyeni olduğumuz, gücümüzü tarihe yeniden nakşettiğimiz günlerden geçiyoruz. Yedi düvele, 72 millete 'biz buradayız' diyoruz. Cumhuriyetimizin ikinci asrında Türkiye Yüzyılı'nda daha büyük, daha güçlü ve müreffeh bir Türkiye hedefiyle yolumuza devam ediyoruz." dedi.
+      p(class='mb-2 lg:mb-4')
+        | Sanayide yapılan yatırımlara değinen Kacır, şunları kaydetti:
+      p(class='mb-2 lg:mb-4')
+        | "Tüm dünya küresel ekonomik daralmalardan, krizlerden geçerken biz siyasi istikrarımızla gücümüze güç katıyor, asra bedel kalkınma hamlelerine yenilerini ekliyoruz. Son 22 yılda attığımız kararlı adımların akabinde Türk sanayinde tesis ettiğimiz güçlü altyapıyla ülkemizi küresel bir üretim merkezi haline getirdik. Askeri insansız hava aracı üretiminde dünyada lider, ticari araç, güneş paneli, beyaz eşya üretiminde Avrupa'da birinci olduk. 22 yılda organize sanayi sayısını 191'den 360'a çıkardık. OSB'lerde üretimde olan sanayi alanı sayısını 11 binden 58 bine, istihdamı 415 binden 2 milyon 700 bine yükselten bir Türk sanayi inşa ettik."
+      p(class='mb-2 lg:mb-4')
+        |"Bayraktar TB2'den Akıncı'ya, Bayraktar TB3'ten Anka'ya, Aksungur'dan Kızıl Elma'ya, Atak'tan Kaan'a, Türk'ün çelik kanatlarıyla terörü vatan toprağından kazıdık attık." diyen Kacır, savunma sanayinde ülkeyi başarıya ulaştıran teknolojik paradigma değişimlerini bir fırsat olarak değerlendirip bu yaklaşımı sivil alanlara da taşıdıklarını ifade etti.
+
+      h2(class="mb-1 text-xl font-bold") "Şehirlerimiz birer üretim üstüne dönüşmüş durumda"
+      p(class='mb-2 lg:mb-4')
+        | Yerli ve milli otomobil Togg'u milletle buluşturduklarını hatırlatan Kacır, Türkiye'yi yüksek teknolojili ve katma değerli üretimde dünyada bir üst lige taşımaya kararlı olduklarını vurguladı.
+
+      p(class='mb-2 lg:mb-4')
+        | Kacır, milli teknoloji hamlesi hedefleri doğrultusunda ülkeyi muasır medeniyetler seviyesinin de üzerine taşırken 7 bölge ve 81 ilin hiçbirini geride bırakmadıklarını dile getirdi.
+      p(class='mb-2 lg:mb-4')
+        | Büyüme ve kalkınma yolculuğunda Doğu ve Güneydoğu Anadolu'nun ziyadesiyle payını aldığını ifade eden Kacır, sözlerini şöyle sürdürdü:
+      p(class='mb-2 lg:mb-4')
+        | "Doğu deyince akıllara, Anadolu'ya açılan kapımız, bu topraklardaki tapumuz gelir. Biliyoruz ki güneş doğudan yükselir. Kadim medeniyetlere ev sahipliği yapmış ve nihayetinde binlerce yıllık Türk yurdu olmuş bu topraklar, artık ekonomik büyümenin, kalkınmanın, üretimin merkezi haline geldi. Son 22 yılda oluşturduğumuz güven iklimi ve yatırım ortamıyla, Doğu ve Güneydoğu Anadolu'daki şehirlerimiz birer üretim üstüne dönüşmüş durumda. Bu dönemde Batman'ın ihracatı 597 kat artarak 600 bin dolardan, 359 milyon dolara çıktı. Diyarbakır'ın ihracatı, 47 kat artarak 7 milyon dolardan 329 milyon dolara, Gaziantep'in ihracatı 619 milyon dolardan 10 milyar 700 milyon dolara yükseldi. Aynı dönemde Şanlıurfa 2 bin 425 yatırım teşvik belgesiyle 124 milyar lira yatırım ve 103 bin istihdamın, Van'da 776 yatırım teşvik belgesiyle 44 milyar lira yatırım ve 47 bin 500 istihdamın, Bitlis'te 546 yatırım teşvik belgesi ile 24 milyar 300 milyon lira yatırım ve 30 bin 600 istihdamın, Bingöl'de 341 yatırım teşvik belgesiyle 42 milyar lira yatırım ve 13 bin 600 istihdamın önünü açtık."
+
+      h2(class="mb-1 text-xl font-bold") "Asım'ın nesli Türk gençliğini milli teknoloji hamlesi yolculuğunda asla yalnız bırakmayacağız"
+      p(class='mb-2 lg:mb-4')
+        | Kacır, "Bitlis'te, 8'i şehrimizde üretimin kalbi konumundaki OSB'miz olmak üzere 31 üretim tesisinin açılışını gerçekleştiriyoruz. Toplam 6,5 milyar lira yatırım büyüklüğüne sahip 11 fabrikamız, 2 bin 300'den fazla vatandaşımıza istihdam kapısı olacak. İplikten lojistiğe, gıdadan savunma sanayine, konfeksiyona pek çok alanda faaliyet gösterecek bu üretim tesisleri hiç şüphe yok ki Bitlis'imizin üretim ve kalkınma yolculuğuna güçlü bir ivme katacak." diye konuştu.
+
+      p(class='mb-2 lg:mb-4')
+        | Bitlis Kiler İplik Fabrikası'nın tam kapasiteyle üretime geçtiğinde günlük 50 ton iplik üretimine ve 400 istihdama ulaşacağını belirten Kacır, konuşmasını şöyle devam etti:
+      p(class='mb-2 lg:mb-4')
+        |"Tekstil sektörümüzün temel girdileri arasında yer alan iplik üretiminde halihazırda dünyanın sayılı üreticileri arasında yer alan ülkemizin üretim altyapısına bu muhteşem tesis güç katacak. Şehrimizin büyümesinde ve sektörümüzün ihracatında önemli bir sıçrama oluşturacak tesis, yatırım, istihdam, üretim ve ihracat rotasında yürüttüğümüz kalkınma hamlemizin bir nişanesi olacak. Üzerinde bulunduğumuz topraklara kazandıracağımız yeni yatırımlarla bu eşsiz coğrafya gelişen ekonomisiyle Türkiye Yüzyılı'nda gün ışığımız, umudumuz olacak. Cumhurbaşkanımız Sayın Recep Tayyip Erdoğan'ın liderliğinde Türkiye Yüzyılı'nda gençlerimizle birlikte 'yapamazsınız, başaramazsınız' diyenlere inat, ecdadın mirasına sahip çıkacak, Asım'ın nesli Türk gençliğini milli teknoloji hamlesi yolculuğunda asla yalnız bırakmayacağız."
+
+      h2(class="mb-1 text-xl font-bold") "İlimizin turizmine katkı sunacağız"
+      p(class='mb-2 lg:mb-4')
+        | Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu da açılışını yaptıkları tesislerin hayırlı olmasını diledi.
+      p(class='mb-2 lg:mb-4')
+        | Bitlis'te yapımı süren Şehir Hastanesi'ne yol ve köprü yapacaklarını belirten Uraloğlu, 2002'de 19 kilometre bölünmüş yolu olan ilde 289 kilometre daha bölünmüş yol yaptıklarını ifade etti.
+      p(class='mb-2 lg:mb-4')
+        | Bitlis'e bakanlık olarak 58 milyar liralık yatırım yaptıklarını aktaran Uraloğlu, "Önceki iktidarlar dönemine baktığımızda Bitlis'e 20 katı yatırım yapmışız. Şimdi biz neler yaptık? Van yolunu bitirdik mi? Bitirdik. Bitlis-Diyarbakır yolunu, Bitlis Çayı Viyadüğü'nü bitirdik. Diyarbakır yolu da az kaldı. Önemli bir bölümünü bu sene, geri kalanını önümüzdeki yıl bitireceğiz. Orayı da trafiğe açacağız. Çalışmalarımız devam ediyor." diye konuştu.
+      p(class='mb-2 lg:mb-4')
+        | "Şu an Tatvan'ı bir araç 40 dakikada ancak geçebiliyor. Tatvan çevre yolunu bitirdiğimizde bu süre 5 dakikaya düşecek." diyen Uraloğlu, şöyle devam etti:
+      p(class='mb-2 lg:mb-4') 
+        | "Dolayısıyla çok kıymetli bir proje. 10 kilometrelik bir projeden bahsediyoruz. İçinde iki tünel var. Biri 1200, diğeri 1300 metre uzunluğunda. Viyadükler var. Bunları inşallah sizlerin hizmetine sunacağız. Bölünmüş yollarımız devam ediyor. Ahlat, Adilcevaz ve Hizan'daki çalışmalarımız, merkezdeki sıcak asfalt çalışmaları hızla devam ediyor. Tatvan'dan Van'a feribotlarımız var. Eskiden 5,5-6 saat süren seyahat süresini 3,5 saate indirdik. Taşınan yükü yaklaşık 5-6 kat artırdık. İlimizin turizmine katkı sunacağız. Bitlis'in birçok turistik özelliği var. Beş minaresi, kalesi, güzel yapıları var. Biz de bu yapıların ulaşımını kolaylaştırıyoruz. Ankara'dan Tatvan'a iki sefer turistik ekspres yaptık. Önümüzdeki sene de devam edecek."

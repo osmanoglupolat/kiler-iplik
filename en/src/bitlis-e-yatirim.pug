@@ -1,0 +1,80 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER YARN - 'Public and Private Sector Investments Mass Opening Ceremony' held in Bitlis"
+    - var pageDescription = "'Public and Private Sector Investments Mass Opening Ceremony' held in Bitlis"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    block video
+      include ./includes/video
+    div(class='banner-title') 
+      h1
+        | Investment in Bitlis! Yarn factory with 65 percent female employment
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/en/news.html' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Back
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Investment in Bitlis! Yarn factory with 65 percent female employment
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | The "Open-End and Ring-Yarn Production Facility" belonging to Kiler Textile Energy and Investment Inc., one of the Kiler Holding group companies, will be a lifeline for Bitlis. With 1000 employment opportunities and a 65 percent female employee ratio, the facility will revitalize Bitlis by increasing development.
+      
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'bitlise-yatirim-1.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | The investment amount of Kiler Yarn Factory, the "Open-End and Ring-Yarn Production Facility" belonging to Kiler Textile Energy and Investment Inc., one of the Kiler Holding group companies, is expected to reach 200 million dollars, with employment opportunities for 1000 people. The 65 percent female employee ratio at the facility will be a lifeline for Bitlis.
+      
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | INVESTMENT IN BITLIS
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | PRODUCTION STARTED WITH YARN
+      
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'bitlise-yatirim-2.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | It was established on a total area of 200,000 square meters (28 football fields), with 60,631 square meters (approximately 8.5 football fields) of indoor space. The facility, whose first phase was established with an investment of 85 million dollars, started production with yarn. With the completion of other phases that will provide polyester and fabric production within three years, the investment amount will reach 200 million dollars, and employment will reach 1000 people.
+      p(class='mb-2 lg:mb-4')
+        | Vahit Kiler, Chairman of the Board of Kiler Yarn Investments Inc., made statements about Kiler Yarn Factory, which has the distinction of being Turkey's largest yarn production facility under a single roof. He stated that they are firmly committed to Turkey's investment, employment, production, and export goals, saying, "As the Kiler family, we see every investment we make and every step we take as serving our country's economy and national independence." Stating that Kiler Yarn Factory has a special place for them despite Kiler Holding's comprehensive investments in different sectors, Vahit Kiler said: "Before implementing this investment, they asked us why we chose Bitlis, which is far from raw materials and has no market. Bitlis is where we were born and grew up. We don't want today's youth to experience the problems and scarcity we experienced in our youth. Therefore, even though we would earn less, we implemented this investment in Bitlis, our hometown. In fact, we didn't even request land incentives for this investment, which could have qualified for state land incentives."
+      
+    
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | WITH 65 PERCENT FEMALE EMPLOYMENT RATIO, IT WILL BE A LIFELINE FOR BITLIS
+    div(class='') 
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'bitlise-yatirim-3.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | Vahit Kiler emphasized that Kiler Yarn Factory, which will contribute to the production and employment of Bitlis, Turkey's 3rd poorest province in terms of per capita income distribution, is a source of pride for them, and highlighted that the 65 percent female employment ratio at the facility will be a lifeline for Bitlis.
+      
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | 48 MILLION DOLLAR ANNUAL CONTRIBUTION TO COTTON FARMERS
+    div(class='') 
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'bitlise-yatirim-4.webp' alt='index-1' class='w-full h-full object-cover')
+    p(class='mb-2 lg:mb-4')
+      | Through Kiler Yarn Factory, which will produce with world-famous Aegean cotton, it is planned to provide an annual contribution of 48 million dollars to cotton farmers. Kiler stated that if cotton were sourced from closer cities, they would have gained a 5 percent advantage, but emphasized that what matters to them is not higher profits but producing the highest quality yarn. Vahit Kiler continued: "We aim to sell to global brands in European countries. For this, we will offer the highest quality products with the best raw materials and production technology, and create a 'world brand from Bitlis', God willing. We have the capacity to produce all types of yarn between numbers 16 and 80. We are receiving orders from the domestic market who are aware of our product quality. We will start exporting towards the end of the year."
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | 'WE WILL CREATE A WORLD BRAND FROM BITLIS'
+    p(class='mb-2 lg:mb-4')
+      | On the other hand, with an expected annual average turnover of 75 million dollars, the Facility is also expected to have an import-reducing effect through domestic sales. The machinery and equipment used in Kiler Yarn Factory were specially produced considering the latest technology and energy efficiency. Kiler, who said "We will transform the technological advantage in machinery and equipment into quality products," also emphasized that the Facility, which will meet all of its energy needs from 'renewable energy', complies with 'zero waste' principles. Emphasizing that the investment underground is more than what's above ground, Vahit Kiler stated that a 6 km long ventilation channel was built. Even the dust from the facility doesn't turn into waste; it is separated and pressed through these channels and thus converted into fuel with 3500 calories.
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | 'TERRORISM LEFT, PEACE CAME, INVESTMENT CAME'
+    p(class='mb-2 lg:mb-4')
+      | Emphasizing that the people of Bitlis stood firm against terrorism for a long time, Kiler continued: "As the darkness of terrorism withdraws from our region, the potential of Bitlis and our other provinces emerges; today our city is one of Turkey's five safest and most peaceful cities. Now there is no concern, there is trust. Trust means investment. As the peaceful environment in our region strengthens, investments will progress even faster. As the Kiler family, we will continue to protect both Bitlis and our entire homeland."
+    div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+      img(src=dirAssets + 'bitlise-yatirim-5.webp' alt='index-1' class='w-full h-full object-cover')
+    p(class='mb-2 lg:mb-4')
+      | Expressing that the results of the fight against terrorism led by President Erdogan illuminate the future of Bitlis and the region, Vahit Kiler said, "With various investments we have made in education, health, transportation, and employment over the last 22 years, and with the support of our President, Bitlis is becoming a shining star in its region. With our belief in Turkey's rapidly advancing goals, we act with national responsibility awareness to reach the 'Turkish Century.'"
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | 'IMPORTS WILL DECREASE, DEVELOPMENT WILL INCREASE, BITLIS WILL REVIVE'
+    p(class='mb-2 lg:mb-4')
+      | Vahit Kiler concluded his words with these statements: "As the Kiler Family, we have kept all the promises we made for Bitlis and our country until today. We will continue to do so. My brothers and I were born and grew up in Bitlis. Our hometown is always on our minds. That's why we make these investments for Bitlis to raise beneficial youth for our homeland. Bitlis and Turkey belong to all of us, and we will build an even brighter future together for our youth."
+

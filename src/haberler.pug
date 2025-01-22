@@ -9,7 +9,8 @@ block prepend head
 block content
   div(class='aspect-square lg:aspect-1920/560 relative -z-10')
     //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
-    video(src=dirAssets + 'kiler_iplik_2.mp4' autoplay loop muted class='w-full h-full object-cover')
+    block video
+      include ./includes/video
     div(class='banner-title') 
       h1 
         | Kiler İplik Open-End ve Ring İplik
@@ -28,6 +29,37 @@ block content
           img(src=dirAssets + 'news-2.jpg' alt='news-2' class='w-full h-full object-cover')
         div(class='mt-4 text-lg')
           | Bitlis'te "Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni düzenlendi
+      
+      a(href='/bitlis-e-yatirim.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'bitlise-yatirim-1.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Bitlis'e yatırım! İplik fabrikasına yüzde 65 kadın istihdamı
+      
+      a(href='/bitliste-85-milyon-dolara-mal-olan-iplik-fabrikasi.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'haber-2.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Bitlis'te 85 milyon dolara mal olan iplik fabrikası 200 kişiye istihdam sağladı
+      
+      a(href='/kiler-holding-modanin-kalbine-iplik-satacak.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'haber-4.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Kiler Holding, modanın kalbine iplik satacak
+      
+      a(href='/kiler-holdingden-200-milyon-dolarlik-tekstil-yatirimi.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'haber-3.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Kiler Holding'den 200 milyon dolarlık tekstil yatırımı
+      
+      a(href='/kiler-iplik-fabrikasi-yil-sonuna-dogru-ihracata-baslayacak.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'bitlise-yatirim-2.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Kiler İplik Fabrikası Yıl Sonuna Doğru İhracata Başlayacak
+
 
   //- div(class='container mt-6 lg:mt-12')
     

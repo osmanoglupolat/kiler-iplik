@@ -1,0 +1,75 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageDescription = "Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    block video
+      include ./includes/video
+    div(class='banner-title') 
+      h1
+        | KİLER İPLİK FABRİKASI YIL SONUNA DOĞRU İHRACATA BAŞLAYACAK
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/haberler.html' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Geri
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Kiler İplik Fabrikası Yıl Sonuna Doğru İhracata Başlayacak
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | Kiler İplik Yatırımları AŞ Yönetim Kurulu Başkanı Vahit Kiler, "Ürünümüzün kalitesinden haberdar olan iç piyasadan siparişler alıyoruz, yıl sonuna doğru ihracata da başlayacağız." dedi.
+
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'bitlise-yatirim-1.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | Cumhurbaşkanı Recep Tayyip Erdoğan tarafından 25 Ağustos'ta açılışı gerçekleştirilen Kiler Holding grup şirketlerinden Kiler Tekstil Enerji ve Yatırım AŞ'ye ait "Open-End ve Ring-İplik Üretim Tesisi" Kiler İplik Fabrikası, yenilenebilir enerjiyle faaliyet göstererek bölge istihdamına katkı sağlayacak.
+
+      p(class='mb-2 lg:mb-4')
+        | 60 bin 631 metrekaresi kapalı alanda olmak üzere toplam 200 bin metrekare arazi üzerine kurulan fabrikanın ilk etabı 85 milyon dolar yatırımla kurularak üretime iplik ile başladı. Üç yıl içinde tamamlanması beklenen fabrikanın diğer etaplarıyla birlikte polyester ve kumaş üretimi de gerçekleştirilecek. Böylece yatırım miktarı 200 milyon doları bulurken sağlanan istihdam da 1000 kişiye çıkacak.
+
+      p(class='mb-2 lg:mb-4')
+        | Dünyaca ünlü Ege pamuğu ile üretim yapacak Kiler İplik Fabrikası sayesinde pamuk çiftçisine de yıllık 48 milyon dolar katkı sağlanması planlanıyor. Yıllık ortalama 75 milyon dolar ciro öngörülen tesisle, yurt içine yapılacak satışlarla da ithalatı azaltıcı etkiye sahip olması bekleniyor.
+
+      p(class='mb-2 lg:mb-4')
+        | Öte yandan fabrikada kullanılan makine ve teçhizat, son teknoloji ve enerji verimliliği dikkate alınarak özel olarak üretildi.
+
+      p(class='mb-2 lg:mb-4')
+        | Fabrikaya ziyaret gerçekleştiren Kiler İplik Yatırımları AŞ Yönetim Kurulu Başkanı Vahit Kiler, basın mensuplarına açıklamalarda bulundu.
+
+      p(class='mb-2 lg:mb-4')
+        | Kiler, Türkiye'nin yatırım, istihdam, üretim ve ihracat hedeflerine sıkı sıkıya bağlı olduklarını dile getirdi.
+
+      p(class='mb-2 lg:mb-4')
+        | Kiler Holding'in farklı sektörlerde kapsamlı yatırımları olmasına karşın Kiler İplik Fabrikası'nın kendileri için özel bir yeri olduğunu belirten Kiler, "Bu yatırımı hayata geçirmeden önce bize, ham maddeye uzak, pazarı olmayan Bitlis'i neden tercih ettiğimizi sordular. Bitlis, bizim doğduğumuz, büyüdüğümüz yer. Gençliğimizde yaşadığımız sorunları, yokluğu, bugünün gençleri yaşamasın istiyoruz. O nedenle daha az kazanacak olsak da bu yatırımı Bitlis'te, memleketimizde hayata geçirdik. Öyle ki, devletten arazi teşviki alabilecek boyutta bu yatırım için arazi teşviki de talep etmedik." ifadelerini kullandı.
+
+      p(class='mb-2 lg:mb-4')
+        | Daha yakın şehirlerden pamuk temin edilseydi yüzde 5 avantaj sağlanacağını belirten Kiler, kendileri için önemli olanın daha fazla kar değil, en kaliteli ipliği üretmek olduğunun altını çizdi.
+
+      p(class='mb-2 lg:mb-4')
+        | Kiler, Avrupa ülkelerindeki global markalara satış yapmayı hedeflediklerini söyleyerek, "Bunun için en kaliteli ham madde ve üretim teknolojisiyle en kaliteli ürünleri sunacak ve Bitlis'ten bir dünya markası çıkaracağız. 16 ile 80 numara arasında yani her türlü ipliği üretebilen bir kapasiteye sahibiz. Ürünümüzün kalitesinden haberdar olan iç piyasadan siparişler alıyoruz, yıl sonuna doğru ihracata da başlayacağız." diye konuştu.
+
+      p(class='mb-2 lg:mb-4')
+        | Makine ve teçhizattaki teknolojik avantajı kaliteli ürüne dönüştüreceklerini vurgulayan Kiler, kendi enerjisinin tamamını yenilenebilir enerjiden karşılayacak olan tesisin sıfır atık ilkelerine uygun olduğunu anlattı.
+
+      p(class='mb-2 lg:mb-4')
+        | Vahit Kiler, yerin üstündeki yatırımın daha fazlasının yerin altında olduğunu dile getirerek, 6 kilometre uzunluğunda havalandırma kanalı inşa edildiğini aktardı.
+
+      p(class='mb-2 lg:mb-4')
+        | - "Bölgemizin huzur ortamı güçlendikçe yatırımlar daha da hızlı ilerleyecek"
+
+      p(class='mb-2 lg:mb-4')
+        | Bitlis halkının uzun süre teröre karşı dimdik durduğunu vurgulayan Kiler, Cumhurbaşkanı Recep Tayyip Erdoğan liderliğinde sürdürülen terörle mücadelenin sonuçlarının Bitlis'in ve bölgenin geleceğini aydınlattığının altını çizdi.
+
+      p(class='mb-2 lg:mb-4')
+        | Kiler, sözlerini şöyle tamamladı:
+
+      p(class='mb-2 lg:mb-4')
+        | "Terörün karanlığı bölgemizden çekildikçe Bitlis'imizin de diğer illerimizin de potansiyeli ortaya çıkıyor. Bugün şehrimiz Türkiye'nin en güvenli ve huzurlu beş şehrinden biri. Artık endişe yok, güven var. Güven demek yatırım demek. Bölgemizin huzur ortamı güçlendikçe yatırımlar daha da hızlı ilerleyecek. Kiler ailesi olarak, biz de hem Bitlis'e hem de memleketimizin tamamına sahip çıkmaya devam edeceğiz. Son 22 yıldır eğitimden sağlığa, ulaşımdan istihdama kadar yaptığımız çeşitli yatırımlarla, Sayın Cumhurbaşkanı'mızın verdiği desteklerle Bitlis, bölgesinde parlayan bir yıldız oluyor. Türkiye'mizin hızla ilerlediği hedeflerine olan inancımızla, 'Türkiye Yüzyılı'na ulaşmak için milli sorumluluk bilinciyle hareket ediyoruz. Kiler ailesi olarak, bugüne kadar Bitlis için, ülkemiz için verdiğimiz tüm sözleri tuttuk. Tutmaya da devam edeceğiz. Ben, kardeşlerim, Bitlis'te doğduk, büyüdük. Memleketimiz her zaman aklımızda. O nedenle Bitlis'in vatanımıza hayırlı nice gençleri yetiştirmesi için bu yatırımları yapıyoruz. Bitlis, Türkiye hepimizin ve gençlerimiz için daha da aydınlık bir geleceği hep birlikte inşa edeceğiz."

@@ -1,0 +1,53 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KILER YARN - $85 Million Yarn Factory in Bitlis Provides Employment to 200 People"
+    - var pageDescription = "A yarn factory worth $85 million in Bitlis provides employment to 200 people"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    block video
+      include ./includes/video
+    div(class='banner-title') 
+      h1
+        | $85 Million Yarn Factory in Bitlis Provides Employment to 200 People
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/en/news.html' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Back
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | $85 Million Yarn Factory in Bitlis Provides Employment to 200 People
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | The yarn factory opened by Kiler Holding in Bitlis, which cost $85 million, initially provided employment to 200 people. Vahit Kiler, Chairman of Kiler Holding's Board of Directors, stated that this investment will add value to both Bitlis and the region, saying, "Bitlis has now broken its shell. There's no going back from here. We're now calculating how we can move forward from here."
+
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-2.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | The yarn factory, which was inaugurated by President Recep Tayyip Erdogan and cabinet members on August 25, cost approximately $85 million. In its initial phase, the factory processes cotton from the Aegean Region and has started serving to meet domestic market needs. Vahit Kiler, Chairman of Kiler Holding's Board of Directors, who stated that they will also focus on exports while working towards becoming a global brand, said that in terms of ring count, machine count, and production capacity, the factory is the largest facility under a single roof in Turkey. Kiler noted that investments have increased in the region with the end of terrorism. Inviting business people from Istanbul and Bursa to the region, and calculating how they can rise to higher ranks in development rankings, Kiler said:
+      p(class='mb-2 lg:mb-4')
+        | "The facility we are currently in is built on a 60,600 square meter area within a 200,000 square meter plot. We have 30 ring machines and 4 open-end machines. We will produce approximately 50 tons of yarn from 65 tons of cotton per day. With this figure, we will be the only factory producing 100% cotton under a single roof. Why did we build this factory in Bitlis? There's no cotton in Bitlis, no market. We had been serving this city for 20 years. Services were provided in education, health, and roads. Finally, we put a stop to politics. However, as a family, our father was born here, we were born and grew up here. We are the ones who experienced the difficulties here. We saw how young people struggled when there was no employment, how they went down wrong paths in coffee shops. Therefore, we wanted both to contribute to the city where we were born and to create an employment opportunity for our youth. Let them learn to stand on their own feet with their own earnings. We could have done this elsewhere."
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-2-1.webp' alt='index-1' class='w-full h-full object-cover')
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | 'THERE WILL BE JOB OPPORTUNITIES FOR 400 OF OUR YOUTH'
+      p(class='mb-2 lg:mb-4')
+        | Addressing women's employment at the facility, Vahit Kiler said, "We could have done it cheaper. We have operations in other areas too. We made an $85 million investment here. If you ask us 'Which investment among your operations makes you the happiest?' This facility gives us the most pleasure. Why? It's a facility that follows our government's policies focused on investment, production, employment, and exports. And more importantly, it will be a facility that provides job opportunities for 400 of our youth. It will produce food and jobs. Another point we're happy about is that 65% of the personnel working here will be women. There weren't many areas where women could work in our region. With us, confection workshops will open. Because this facility will produce their infrastructure and raw materials. Therefore, we're opening a door of livelihood for our women who sit idle at home."
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4') 
+        img(src=dirAssets + 'bitlise-yatirim-2.webp' alt='index-1' class='w-full h-full object-cover')
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | 'WE BOTH PRODUCE AND TRAIN'
+      p(class='mb-2 lg:mb-4')
+        | Kiler also mentioned that they face difficulties in finding qualified personnel due to the lack of such facilities in the region, saying, "Of course, there are challenges for us. Because there are no such facilities in this region, we have difficulties in training personnel. But it's not important for us. We will both produce and train. We brought our factory manager and chiefs from outside. Training continues. The personnel here will be trained within 2 months. The machines we installed here operate with the latest technology. Very specialized yarns are produced. We will try to produce quality, special, and branded products. We will try to become a sought-after brand by producing the highest quality product in Bitlis. We want to produce products that are in demand in the market. We want to highlight the technology of the machines. We want to produce products that are sought after, not seeking markets."
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | AS TERRORISM ENDS, INVESTMENTS BEGIN TO COME TO THE REGION
+      p(class='mb-2 lg:mb-4')
+        | Noting that investments have increased with the end of terrorism in the region, Kiler said, "With the end of terrorism, a peaceful environment has formed in the region. Other business people are also moving their confection workshops here. This investment will add value to both Bitlis and the region. Apart from the cotton we will produce from 100% cotton, we will produce yarn and fabric from polyester. As the third phase, we will produce quality fabric for both the domestic market and the world market. We see this very clearly. As terrorism ends and peace comes to the region, people, especially businesspeople from Bitlis, have started to invest here. Bitlis has now broken its shell. There's no going back from here. We're calculating how we can move forward from here. We will take these steps together with businesspeople from Bitlis. By inviting businesspeople from Istanbul and Bursa here and establishing such facilities, how can we bring Bitlis to the forefront in the export market and production market? We will make these calculations."
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4') 
+        img(src=dirAssets + 'haber-2-2.webp' alt='index-1' class='w-full h-full object-cover')

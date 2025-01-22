@@ -1,0 +1,53 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageDescription = "Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    block video
+      include ./includes/video
+    div(class='banner-title') 
+      h1
+        | Bitlis'te 85 milyon dolara mal olan iplik fabrikası 200 kişiye istihdam sağladı
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/haberler.html' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Geri
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Bitlis'te 85 milyon dolara mal olan iplik fabrikası 200 kişiye istihdam sağladı
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | Bitlis’te, Kiler Holding tarafından açılan ve 85 milyon dolara mal olan iplik fabrikası, ilk etapta 200 kişiye istihdam sağladı. Kiler Holding Yönetim Kurulu Başkanı Vahit Kiler, bu yatırımın hem Bitlis’e hem bölgeye katma değer sağlayacağını belirterek, “Artık Bitlis kabuğunu kırdı. Buradan artık geri gitmek yok. Buradan daha ileriye nasıl gideriz. Onun hesaplarını yapıyoruz” dedi.
+
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-2.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | Cumhurbaşkanı Recep Tayyip Erdoğan ve kabine üyeleri tarafından 25 Ağustos'ta açılışı yapılan iplik fabrikası yaklaşık 85 milyon dolara mal oldu. İlk etapta Ege Bölgesi’nden gelen pamuğu işleyen fabrika, iç pazar ihtiyacının karşılanması için hizmet vermeye başladı. Dünya markası olma yolunda çalışmalar yaparak, ihracata da yöneleceklerini belirten Kiler Holding Yönetim Kurulu Başkanı Vahit Kiler, ring sayısı, makine sayısı ve üretim kapasitesi bakımından fabrikanın, Türkiye’de tek çatı altındaki en büyük tesis olduğunu söyledi. Kiler, bölgede terörün bitmesiyle yatırımların da arttığına değindi. İstanbul’da, Bursa’da olan iş insanlarını da bölgeye davet ederek, kalkınmışlık sıralamasında üst sıralara nasıl çıkacaklarının hesaplarını yaptıklarını belirten Kiler, şunları söyledi:
+      p(class='mb-2 lg:mb-4')
+        | "Şu anda içinde bulunduğumuz tesis, 200 bin metrekare alın içinde 60 bin 600 metrekare alana kuruldu. 30 ring makinesi ve 4 de open end makinemiz var. Günde yaklaşık 65 ton pamuktan 50 ton iplik üreteceğiz. Bu rakamla da tek çatı altında yüzde 100 pamuk üreten tek fabrika olacağız. Bu fabrikayı neden Bitlis’te kurduk. Bitlis’te pamuk yok, pazar yok. 20 yıldır bu şehre hizmet ediyorduk. Eğitimden, sağlıktan ve yollardan hizmetler yapıldı. Sonunda siyasete noktayı koyduk. Ancak aile olarak bizler, babamız burada doğdu, bizler burada doğup büyüdük. Buradaki sıkıntıları yaşayanlar bizleriz. İstihdam olmadığı zaman gençlerin nasıl sıkıntı yaşadıklarını, kahve köşelerinde kötü yollara düştüğünü gördük. Dolayısıyla burada yaptığımız hem doğduğumuz şehre bir katkımız olsun hem de gençlerimize bir istihdam sahası açmak istedik. Kendi kazançlarıyla kendi ayakları üzerinde durmayı öğrensinler. Başka yerde de yapabilirdik.”
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-2-1.webp' alt='index-1' class='w-full h-full object-cover')
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | ‘400 GENCİMİZE İŞ İMKANI OLACAK’
+      p(class='mb-2 lg:mb-4')
+        | Tesisteki kadın istihdamına değinen Vahit Kiler, “Daha ucuza da mal edebilirdik. Diğer alanlarda da işlerimiz var. Buraya 85 milyon dolarlık bir yatırım yaptık. ‘Bize sorsanız yaptığınız işler içerisinde sizleri en çok mutlu eden yatırım hangisi’ diye. Bize en fazla haz veren tesis burasıdır. Neden? Hem hükümetimizin koyduğu politikalar üzerinden yürüyen, yatırım, üretim, istihdam, ihracata odaklı bir tesis. Ve daha önemlisi 400 gencimize iş imkanı olacak bir tesisimiz olacak. Aş üretecek, iş üretecek. Bir sevindiğimiz nokta da burada çalışan personelin yüzde 65’i bayan olacak. Bölgemizde bayanların çok da çalışacakları alanlar yoktu. Bizimle beraber konfeksiyon atölyeleri açılacak. Çünkü bu tesis onların alt yapısı ve ham maddesini üretecek. Dolayısıyla da evde boş oturan kadınlarımıza da burada bir ekmek kapısı açıyoruz” dedi.
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4') 
+        img(src=dirAssets + 'bitlise-yatirim-2.webp' alt='index-1' class='w-full h-full object-cover')
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | 'HEM ÜRETİYORUZ HEM DE EĞİTİYORUZ'
+      p(class='mb-2 lg:mb-4')
+        | Bölgede bu tür tesislerin olmamasından kaynaklı kalifiye eleman sıkıntısı yaşadıklarını da dile getiren Kiler, "Tabi bizim için zorlukları da var. Bu bölgede bu tür tesisler olmadığı için eleman yetiştirmede zorluklarımız var. Ama bizim için önemli değil. Hem üreteceğiz hem de eğiteceğiz. Farika müdürümüz, şeflerimizi dışardan getirdik. Eğitimler de devam ediyor. 2 ay içerisinde buradaki personeller eğitilecek. Burada kurduğumuz makineler en son teknoloji ile işliyor. Çok özellikli iplikler üretiliyor. Kaliteli, özel ve marka ürün üretmeye çalışacağız. Bitlis’te ürettiğimiz en kaliteli ürünü üreterek aranan marka olmaya çalışacağız. Piyasada aranan ürün üretmek istiyoruz. Makinelerin teknolojisini ön plana çıkarmak istiyoruz. Pazar arayan değil, aranan ürün üretmek istiyoruz" diye konuştu.
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | TERÖR BİTTİKÇE BÖLGEYE YATIRIM GELMEYE BAŞLADI
+      p(class='mb-2 lg:mb-4')
+        | Bölgede uzun süren bir terör meselesinin bitmesi ile yatırımcıların bölgeye döndüklerini de kaydeden Kiler, "Terörün bitmesi ile bölgede bir huzur ortamı oluştu. Diğer iş insanları da konfeksiyon atölyelerini buraya taşıyor. Bu yatırım, hem Bitlis’e hem bölgeye katma değer sağlayacak. Yüzde 100 pamuktan üreteceğimiz pamuk dışında polyesterden iplik ve kumaş üreteceğiz. 3'üncü aşama olarak hem iç piyasaya hem de dünya pazarına kaliteli kumaş üreteceğiz. Şunu çok açık ve net görüyoruz. Terör bittikçe bölgeye huzur geldikçe insanlar gelip buraya, özellikle de Bitlisli iş insanlarımız yatırım yapmaya başladı. Artık Bitlis kabuğunu kırdı. Buradan artık geri gitmek yok. Buradan daha ileriye nasıl gideriz. Onun hesaplarını yapıyoruz. Bu adımları hep birlikte Bitlisli iş insanları ile birlikte atacağız. İstanbul’daki, Bursa’daki iş insanlarını da buraya davet ederek, bu tür tesisler kurarak, artık Bitlis’i ihracat pazarında da üretim pazarın da nasıl ön plana çıkarırız? Bunun hesaplarını yapacağız" dedi.
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4') 
+        img(src=dirAssets + 'haber-2-2.webp' alt='index-1' class='w-full h-full object-cover')

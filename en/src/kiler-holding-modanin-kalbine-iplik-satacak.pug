@@ -1,0 +1,58 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KILER YARN - Kiler Holding Will Sell Yarn to the Heart of Fashion"
+    - var pageDescription = "Kiler Holding Will Sell Yarn to the Heart of Fashion"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    block video
+      include ./includes/video
+    div(class='banner-title') 
+      h1
+        | Kiler Holding Will Sell Yarn to the Heart of Fashion
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/en/news.html' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Back
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Kiler Holding Will Sell Yarn to the Heart of Fashion
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | Good news is also coming from the textile sector, where investments have come to a standstill and closures are being experienced. Kiler Holding, which operates in construction, energy, tourism, and agriculture sectors, has also entered the textile sector.
+
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-4.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | The holding, which established an open-end and ring-yarn production facility in Bitlis with an investment of $85 million, will supply value-added and specialized yarns from number 16 to 80 to global brands. The total investment amount planned for the facility, which opened its first phase consisting of cotton yarn production last week, is $200 million. While polyester yarn production is planned as the second phase and fabric production as the third phase within 3 years, the employment number is targeted to exceed one thousand. The current employment at the facility, which aims to be a 'lifeline' for regional employment, consists of 450 people, 65% of whom are women.
+    
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Full Capacity and Exports Within 3 Months
+    p(class='mb-2 lg:mb-4')
+      | Kiler Yarn, which is built on a total area of 200,000 square meters with 60,600 square meters of enclosed space and currently has 10 out of 30 lines operational, will process 60 tons of Izmir and Söke cotton daily to produce 50 tons of yarn. The factory is expected to reach full capacity within 3 months and begin exports from December. Vahit Kiler, Chairman of Kiler Yarn Investments Inc., who said that the facility is Turkey's largest cotton yarn production factory 'under one roof' with an expected annual turnover of $75 million, stated that the facility was established for investment-employment and export purposes. Kiler, who explained that they set out to become a brand opening from Bitlis to the world, announced that they will export 35-40% of production. Kiler stated that they will turn this period of low demand into an advantage with quality yarn and will supply products to luxury brands in countries like Italy and England.
+    
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | First Investment in Bitlis by Bitlis-born Kiler
+    p(class='mb-2 lg:mb-4')
+      | Vahit Kiler, who announced that they had anticipated a total investment of $100 million before starting the yarn factory investment and that $85 million of this has already been made, revealed that $60 million of this was machinery investment. Kiler, who stated that investment in automation continues, said that an automatic packaging facility will be established as the first example in the world. Kiler, who conveyed that 35% of the investment is equity, said, "We are a group that always works with equity and doesn't use credit unless necessary. We didn't intend to use credit in this investment either. When the economy tightened, the construction sector also tightened, and we transferred this resource to that side. We will close this at the first opportunity."
+    p(class='mb-2 lg:mb-4')
+      | Stating that they are firmly committed to Turkey's investment, employment, production, and export targets, Kiler said, "Before bringing this investment to life, they asked us why we chose Bitlis, which is far from raw materials and has no market. Bitlis is where we were born and grew up. We don't want today's youth to experience the problems and poverty we experienced in our youth. Therefore, even though we will earn less, we brought this investment to life in our hometown. We didn't even request land incentives for this investment, although it was eligible for land incentives from the state." Kiler Yarn, which is Kiler Holding's first investment in Bitlis, will also be the holding's first export venture.
+
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Cotton Dust is Converted into Fuel
+    p(class='mb-2 lg:mb-4')
+      | Ümit Kiler, Board Member of Kiler Holding, who said that Bitlis has struggled with terrorism for many years and has 'fallen behind' in terms of per capita income, stated that after Eren Holding and Kiler Holding, which also have yarn investments, investments in the city have revived, especially by businesspeople from Bitlis. Kiler said, "For large-scale investments, 700-800 acres of land was purchased in the region, in parcels of 20-30 acres. Although they have slowed down due to the current investment environment, new construction will begin soon." There are also numerous confection workshops established in Bitlis within 6-7 years. These workshops, which provide employment to approximately 17,000 people, produce for brands such as LC Waikiki and Inditex.
+    
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | "There Could Be a Transition from Caravan to Automotive"
+    p(class='mb-2 lg:mb-4')
+      | Kiler Holding, which entered caravan production about 3 years ago in addition to energy generation, distribution, tourism, and construction businesses, is also preparing for new investments in this area. Ümit Kiler, who stated that there might be developments regarding entry into different sectors or collaborations in the near future, said, "We can enter if we find feasible areas. Caravan production could evolve into automotive. We produce in a 10,000 square meter enclosed area in Çatalca. There could be an assembly venture there. It's suitable for electric vehicle and motorcycle production. We might have collaborations."
+
+

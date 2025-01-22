@@ -1,0 +1,10 @@
+div(class='fixed inset-0 flex justify-center items-center popup-container')
+  div(class='bg-white p-4 rounded-lg max-w-3xl mx-auto')
+    div(class='flex flex-col')
+        picture
+            source(srcset=dirAssets + 'kiler_iplik_mobil_en.jpg' media='(max-width: 1024px)')
+            source(srcset=dirAssets + 'kiler_iplik_masaustu_en.jpg' media='(min-width: 1025px)')
+            img(src=dirAssets + 'kiler_iplik_masaustu_en.jpg' class='w-full h-full object-cover')
+        button(class='text-black font-medium text-sm underline mt-4' id='popup-close')
+            | Close
+

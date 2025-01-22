@@ -11,4 +11,5 @@ block prepend head
 
 block content
   div(class= 'flex items-center justify-center h-screen w-full overflow-hidden relative')
-    video(src=dirAssets + 'kiler_iplik_2.mp4' autoplay loop muted class='w-full h-full object-cover')
+    block video
+      include ./includes/video

@@ -1,0 +1,53 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageDescription = "Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    block video
+      include ./includes/video
+    div(class='banner-title') 
+      h1
+        | Kiler Holding'den 200 milyon dolarlık tekstil yatırımı
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/haberler.html' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Geri
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Kiler Holding'den 200 milyon dolarlık tekstil yatırımı
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | Bitlis’te 85 milyon dolarlık yatırımla pamuk ipliği üretim tesisi kuran Kiler Holding, 3 faz olarak planlan ve toplamda 200 milyon dolar olarak öngörülen yatırımla, 3 yıl içerisinde polyester iplik ve kumaş üretimi yapacak. Günlük 50 ton pamuk ipliği üretecek tesis, modanın merkezinde yer alan dünya markalarına iplik satmayı hedefliyor.
+
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-3.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | İnşaat, enerji, turizm ve tarım sektörlerinde faaliyet gösteren Kiler Holding, tekstil sektörüne de girdi. 85 milyon dolar yatırımla Bitlis’te open-end ve ring-iplik üretim tesisi kuran holding, buradan 16 numaradan 80 numaraya kadar katma değerli ve özellikli iplikleri global markalara tedarik edecek.
+      p(class='mb-2 lg:mb-4')
+        | 3 etap olarak planlanan ve pamuk iplik üretiminden oluşan ilk etabı geçen hafta açılan tesis için planlanan toplam yatırım tutarı ise 200 milyon dolar. Tesiste 3 yıl içerisinde ikinci etap olarak polyester iplik, üçüncü etap olarak da kumaş üretimi planlanırken, istihdam sayısının da binin üzerine çıkarılması hedefleniyor. Tesiste şu anki istihdam, yüzde 65’i kadın olmak üzere toplam 450 kişiden meydana geliyor.
+
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | İhracata aralık ayında başlanacak
+      p(class='mb-2 lg:mb-4')
+        | Fabrikanın 3 ay içerisinde tam kapasite üretime geçerek, aralık ayından itibaren ihracata da başlaması bekleniyor. Yıllık 75 milyon dolar ciro öngörülen tesisin ‘tek çatı’ altında Türkiye’nin en büyük pamuk ipliği üretim fabrikası olduğunu söyleyen Kiler İplik Yatırımları AŞ Yönetim Kurulu Başkanı Vahit Kiler, tesisin yatırım-istihdam ve ihracat amacıyla kurulduğunu belirtti. Kiler, üretimin yüzde 35-40’ını ihraç edeceklerini açıklarken, talebin düşük olduğu bu dönemi kaliteli iplik ile avantaja çevireceklerini, İtalya ve İngiltere gibi ülkelerin lüks markalarına ürün vereceklerini belirtti.
+
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-3-1.webp' alt='index-1' class='w-full h-full object-cover')
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | Yatırımın yüzde 35’ini özkaynak oluşturuyor
+      p(class='mb-2 lg:mb-4')
+        | Yatırımın yüzde 35’inin özkaynak olduğunu ileten Kiler, “Hep özkaynak ile çalışan, zorunlu olmadıkça kredi kullanmayan bir grubuz. Bu yatırımda da kredi kullanma amacımız yoktu. Ekonomi sıkışınca inşaat sektörü de sıkıştı ve bu kaynağı o tarafa aktardık. İlk fırsatta da bunu kapatacağız” diye konuştu. Türkiye’nin yatırım, istihdam, üretim ve ihracat hedeflerine sıkı sıkıya bağlı olduklarını belirten Kiler, “Bu yatırımı hayata geçirmeden önce bize, ham maddeye uzak, pazarı olmayan Bitlis’i neden tercih ettiğimizi sordular. Bitlis, bizim doğduğumuz, büyüdüğümüz yer. Gençliğimizde yaşadığımız sorunları, yokluğu, bugünün gençleri yaşamasın istiyoruz. O nedenle daha az kazanacak olsak da bu yatırımı memleketimizde hayata geçirdik. Devletten arazi teşviği alabilecek boyutta bu yatırım için arazi teşviği de talep etmedik” dedi. Kiler Holding’in Bitlis’teki ilk yatırımı olan Kiler İplik, yine holdingin ilk ihracata başlangıç ayağı da olacak.
+
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | Tesisin tozu dahi atığa değil yakıta dönüşüyor
+      p(class='mb-2 lg:mb-4')
+        | Kiler İplik Fabrikası’nda kullanılan makine ve teçhizatın enerji verimliliği dikkate alınarak özel olarak üretildiğini kaydeden Vahit Kiler, kendi enerjisinin tamamını ‘yenilenebilir enerji’den karşılayacak olan tesisin ‘sıfır atık’ ilkelerine uygun olduğunu söyledi. Yerin altında 2.5 metre derinliğinde, 3 metre genişliğinde 6 km uzunluğunda havalandırma kanalı inşa edildiğini aktaran Kiler, tesiste çıkan tozların dahi atığa dönüşmediğini söyledi. Kiler, “Pamuk tozları bu kanallar aracılığıyla ayrıştırılıp presleniyor ve böylece 3 bin 500 kalorilik yakıta dönüştürülüyor” dedi.
+

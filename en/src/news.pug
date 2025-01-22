@@ -9,7 +9,8 @@ block prepend head
 block content
   div(class='aspect-square lg:aspect-1920/560 relative -z-10')
     //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
-    video(src=dirAssets + 'kiler_iplik_2.mp4' autoplay loop muted class='w-full h-full object-cover')
+    block video
+      include ./includes/video
     div(class='banner-title') 
       h1 Kiler İplik Open-End and Ring Yarn Production Facility Images and Press Coverage
   
@@ -25,6 +26,36 @@ block content
           img(src=dirAssets + 'news-2.jpg' alt='news-2' class='w-full h-full object-cover')
         div(class='mt-4 text-lg')
           | "Public and Private Sector Investments Mass Opening Ceremony" was held in Bitlis
+
+      a(href='/en/bitlis-e-yatirim.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'bitlise-yatirim-1.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Investment in Bitlis! 65% of the workforce is female in the textile factory
+      
+      a(href='/en/bitliste-85-milyon-dolara-mal-olan-iplik-fabrikasi.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'haber-2.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Textile factory in Bitlis, which cost 85 million dollars, provided employment to 200 people
+      
+      a(href='/en/kiler-holding-modanin-kalbine-iplik-satacak.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'haber-4.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Kiler Holding will sell yarn to the heart of fashion
+      
+      a(href='/en/kiler-holdingden-200-milyon-dolarlik-tekstil-yatirimi.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'haber-3.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | 200 million dollar textile investment from Kiler Holding
+      
+      a(href='/en/kiler-iplik-fabrikasi-yil-sonuna-dogru-ihracata-baslayacak.html' class="")
+        div(class='aspect-gallery rounded-3xl overflow-hidden')
+          img(src=dirAssets + 'bitlise-yatirim-2.webp' alt='news-2' class='w-full h-full object-cover')
+        div(class='mt-4 text-lg')
+          | Kiler Yarn Factory Will Begin Exports Towards the End of the Year
 
   //- div(class='container mt-6 lg:mt-12')
     

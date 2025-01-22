@@ -9,7 +9,8 @@ block prepend head
 block content
   div(class='aspect-square lg:aspect-1920/560 relative -z-10')
     //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
-    video(src=dirAssets + 'kiler_iplik_2.mp4' autoplay loop muted class='w-full h-full object-cover')
+    block video
+      include ./includes/video
     div(class='banner-title') 
       h1 
         | GALERİ

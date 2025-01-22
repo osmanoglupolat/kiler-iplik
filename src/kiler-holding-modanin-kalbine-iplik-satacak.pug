@@ -1,0 +1,58 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KİLER İPLİK - Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageDescription = "Bitlis'te 'Kamu ve Özel Sektör Yatırımları Toplu Açılış Töreni' düzenlendi"
+    - var pageName = "Home"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    block video
+      include ./includes/video
+    div(class='banner-title') 
+      h1
+        | Kiler Holding, modanın kalbine iplik satacak
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/haberler.html' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Geri
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Kiler Holding, modanın kalbine iplik satacak
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | Yatırımların durma noktasına geldiği, kapanmalar yaşanan tekstil sektöründen güzel haberler de geliyor. İnşaat, enerji, turizm ve tarım sektörlerinde faaliyet gösteren Kiler Holding, tekstil sektörüne de girdi.
+
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-4.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | 85 milyon dolar yatırımla Bitlis’te openend ve ring-iplik üretim tesisi kuran holding, burada 16 numaradan 80 numaraya kadar katma değerli ve özellikli iplikleri global markalara tedarik edecek. 3 etap olarak planlanan ve pamuk iplik üretiminden oluşan ilk etabı geçen hafta açılan tesis için öngörülen toplam yatırım tutarı ise 200 milyon dolar. Tesiste 3 yıl içerisinde ikinci etap olarak polyester iplik, üçüncü etap olarak da kumaş üretimi planlanırken, istihdam sayısının da binin üzerine çıkarılması hedefleniyor. Bölge istihdamına ‘can suyu’ olması amaçlanan tesiste, şu anki istihdam sayısı yüzde 65’i kadın olmak üzere toplam 450 kişi.
+    
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | 3 ay içinde tam kapasite ve ihracat
+    p(class='mb-2 lg:mb-4')
+      | 60.6 bin metrekaresi kapalı olmak üzere toplam 200 bin metrekare arazi üzerine kurulan ve şu an 30 hattan 10’u devrede olan Kiler İplik, günlük 60 ton İzmir ve Söke pamuğunu işleyerek 50 ton iplik üretecek. Fabrikanın 3 ay içerisinde tam kapasiteye geçerek, aralık ayından itibaren ihracata da başlaması bekleniyor. Yıllık 75 milyon dolar ciro öngörülen tesisin ‘tek çatı’ altında Türkiye’nin en büyük pamuk ipliği üretim fabrikası olduğunu söyleyen Kiler İplik Yatırımları AŞ Yönetim Kurulu Başkanı Vahit Kiler, tesisin yatırım-istihdam ve ihracat amacıyla kurulduğunu belirtti. Bitlis’ten dünyaya açılan bir marka olmak için yola çıktıklarını anlatan Kiler, üretimin yüzde 35- 40’ını ihraç edeceklerini açıkladı. Kiler, talebin düşük olduğu bu dönemi kaliteli iplik ile avantaja çevireceklerini ve İtalya ve İngiltere gibi ülkelerin lüks markalarına ürün vereceklerini belirtti.
+    
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Bitlisli Kiler’in, Bitlis’e ilk yatırımı
+    p(class='mb-2 lg:mb-4')
+      | İplik fabrikası yatırımına başlamadan önce toplam 100 milyon dolarlık yatırım öngördüklerini ve bunun 85 milyon dolarının hali hazırda yapıldığını açıklayan Vahit Kiler, bunun da 60 milyon dolarının makine yatırımı olduğunu açıkladı. Otomasyonla ilgili yatırımın devam ettiğini dile getiren Kiler, dünyada ilk örnek olarak otomatik paketleme tesisi kurulacağını söyledi. Yatırımın yüzde 35’inin özkaynak olduğunu ileten Kiler, “Hep özkaynak ile çalışan, zorunlu olmadıkça kredi kullanmayan bir grubuz. Bu yatırımda da kredi kullanma amacımız yoktu. Ekonomi sıkışınca inşaat sektörü de sıkıştı ve bu kaynağı o tarafa aktardık. İlk fırsatta da bunu kapatacağız” diye konuştu.
+    p(class='mb-2 lg:mb-4')
+      | Türkiye’nin yatırım, istihdam, üretim ve ihracat hedeflerine sıkı sıkıya bağlı olduklarını belirten Kiler, “Bu yatırımı hayata geçirmeden önce bize, hammaddeye uzak, pazarı olmayan Bitlis’i neden tercih ettiğimizi sordular. Bitlis, bizim doğduğumuz, büyüdüğümüz yer. Gençliğimizde yaşadığımız sorunları, yokluğu, bugünün gençleri yaşamasın istiyoruz. O nedenle daha az kazanacak olsak da bu yatırımı memleketimizde hayata geçirdik. Devletten arazi teşviki alabilecek boyutta bu yatırım için arazi teşviği de talep etmedik” dedi. Kiler Holding’in Bitlis’teki ilk yatırımı olan Kiler İplik, yine holdingin ilk ihracata başlangıç ayağı da olacak. 
+
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | Pamuk tozu, yakıta dönüştürülüyor
+    p(class='mb-2 lg:mb-4')
+      | Bitlis’in uzun yıllar terörle mücadele ettiğini ve kişi başı gelir noktasında ‘geri’ kaldığını söyleyen Kiler Holding Yönetim Kurulu Üyesi Ümit Kiler, yine iplik yatırımı bulunan Eren Holding ve Kiler Holding’in ardından Bitlisli iş insanları başta olmak üzere şehre yatırımların canlandığını belirtti. Kiler, “Büyük ölçekli yatırımlar için bölgede 700- 800 dönüm arazi, 20-30 dönüm parseller halinde alındı. Şu anki yatırım ortamı nedeni ile yavaşlatsalar da yakın zamanda yeni inşaatlar başlayacak” dedi. Bitlis’te 6-7 yıl içerisinde kurulan çok sayıda konfeksiyon atölyeleri de bulunuyor. Yaklaşık 17 bin kişiye istihdam sağlayan bu atölyeler, LC Waikiki, Inditex gibi markalara üretim yapıyor.
+    
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | “Karavandan otomotive geçiş olabilir"
+    p(class='mb-2 lg:mb-4')
+      | Enerji üretim, dağıtım, turizm ve inşaat işlerinin yanı sıra yaklaşık 3 yıl önce karavan üretimine de giren Kiler Holding, bu alanda da yeni yatırımlara hazırlanıyor. Yakın zamanda farklı sektörlere giriş ya da işbirlikleri ile ilgili gelişmeler olabileceğini dile getiren Ümit Kiler, “Fizibl bulduğumuz alanlar olursa girebiliriz. Karavan üretimi otomotive evrilebilir. Çatalca’da 10 bin metrekare kapalı alanda üretim yapıyoruz. Orada montaj gibi bir girişim olabilir. Orası elektrikli araç, motosiklet üretimi için uygun. İşbirliklerimiz olabilir” dedi.
+
+

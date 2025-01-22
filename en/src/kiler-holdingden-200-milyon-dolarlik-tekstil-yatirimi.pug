@@ -1,0 +1,53 @@
+extends layouts/default.pug
+
+block prepend head
+    - var pageTitle = "KILER YARN - $200 Million Textile Investment from Kiler Holding"
+    - var pageDescription = "$200 Million Textile Investment from Kiler Holding"
+    - var pageName = "News"
+    - var pageClass = "page-body-class"
+
+block content
+  div(class='aspect-square lg:aspect-1920/560 relative -z-10')
+    //- img(src=dirAssets + 'banner.jpg' alt='anasayfa' class='w-full h-full object-cover')
+    block video
+      include ./includes/video
+    div(class='banner-title') 
+      h1
+        | $200 Million Textile Investment from Kiler Holding
+
+  section(class='container py-12')
+    div(class="flex justify-center items-center")
+      a(href='/en/news.html' class='mr-auto flex items-center hover:underline') 
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="currentColor"><path d="M640-93.85 253.85-480 640-866.15l56.77 56.77L367.38-480l329.39 329.38L640-93.85Z"/></svg>
+        span Back
+
+    h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+      | $200 Million Textile Investment from Kiler Holding
+    div(class='') 
+      p(class='mb-2 lg:mb-4')
+        | Kiler Holding, which established a cotton yarn production facility in Bitlis with an investment of $85 million, will produce polyester yarn and fabric within 3 years with a total investment of $200 million planned in 3 phases. The facility, which will produce 50 tons of cotton yarn daily, aims to sell yarn to world brands located in fashion centers.
+
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-3.webp' alt='index-1' class='w-full h-full object-cover')
+      p(class='mb-2 lg:mb-4')
+        | Kiler Holding, which operates in construction, energy, tourism, and agriculture sectors, has also entered the textile sector. The holding, which established an open-end and ring-yarn production facility in Bitlis with an investment of $85 million, will supply value-added and specialized yarns from number 16 to 80 to global brands.
+      p(class='mb-2 lg:mb-4')
+        | The total planned investment amount for the facility, whose first phase consisting of cotton yarn production was opened last week, is $200 million. While polyester yarn production is planned as the second phase and fabric production as the third phase within 3 years, the employment number is targeted to exceed one thousand. The current employment at the facility consists of 450 people, 65% of whom are women.
+
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | Exports will begin in December
+      p(class='mb-2 lg:mb-4')
+        | The factory is expected to start full capacity production within 3 months and begin exports from December. Vahit Kiler, Chairman of the Board of Kiler Yarn Investments Inc., who said that the facility is Turkey's largest cotton yarn production factory 'under one roof' with an expected annual turnover of $75 million, stated that the facility was established for investment-employment and export purposes. While Kiler announced that they will export 35-40% of production, he stated that they will turn this period of low demand into an advantage with quality yarn and will supply products to luxury brands in countries like Italy and England.
+
+      div(class='aspect-1200/720 rounded-3xl overflow-hidden my-4')
+        img(src=dirAssets + 'haber-3-1.webp' alt='index-1' class='w-full h-full object-cover')
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | 35% of the Investment is Equity
+      p(class='mb-2 lg:mb-4')
+        | Kiler, who conveyed that 35% of the investment is equity, said, "We are a group that always works with equity and doesn't use credit unless necessary. We didn't intend to use credit in this investment either. When the economy tightened, the construction sector also tightened, and we transferred this resource to that side. We will close this at the first opportunity." Stating that they are firmly committed to Turkey's investment, employment, production, and export targets, Kiler said, "Before bringing this investment to life, they asked us why we chose Bitlis, which is far from raw materials and has no market. Bitlis is where we were born and grew up. We don't want today's youth to experience the problems and poverty we experienced in our youth. Therefore, even though we will earn less, we brought this investment to life in our hometown. We didn't even request land incentives for this investment, although it was eligible for land incentives from the state." Kiler Yarn, which is Kiler Holding's first investment in Bitlis, will also be the holding's first export venture.
+
+      h2(class='text-center text-2xl lg:text-3xl font-bold py-8 lg:py-12')
+        | Even the Facility's Dust is Converted to Fuel
+      p(class='mb-2 lg:mb-4')
+        | Vahit Kiler, who noted that the machinery and equipment used in the Kiler Yarn Factory were specially produced considering energy efficiency, said that the facility, which will meet all of its energy from 'renewable energy', complies with 'zero waste' principles. Kiler, who stated that a ventilation channel 2.5 meters deep, 3 meters wide, and 6 km long was built underground, said that even the dust in the facility doesn't turn into waste. Kiler said, "Cotton dust is separated and pressed through these channels, thus converting it into fuel with 3,500 calories."
+
